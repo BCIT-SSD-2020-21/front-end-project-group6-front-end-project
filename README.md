@@ -6,7 +6,7 @@ Walkabook is an e-commerce site currently dedicated to selling books focused on 
 
 Our initial target market is professional and student web developers.
 
-### UCD Goes Here
+![](https://i.imgur.com/fVm5Kon.png)
 
 ## Brand Identity
 
@@ -26,6 +26,8 @@ Our initial target market is professional and student web developers.
 ![](https://i.imgur.com/HtaONpa.png)
 ![](https://i.imgur.com/0RwynX0.png)
 ![](https://i.imgur.com/gQJ4xko.png)
+![](https://i.imgur.com/lU5Xhl2.png)
+
 
 
 ## Team

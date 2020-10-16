@@ -26,6 +26,8 @@ Our initial target market is professional and student web developers.
 ![](https://i.imgur.com/HtaONpa.png)
 ![](https://i.imgur.com/0RwynX0.png)
 ![](https://i.imgur.com/gQJ4xko.png)
+![](https://i.imgur.com/lU5Xhl2.png)
+
 
 
 ## Team

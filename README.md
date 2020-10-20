@@ -26,21 +26,22 @@ Our initial target market is professional and student web developers.
 ![](https://i.imgur.com/HtaONpa.png)
 ![](https://i.imgur.com/0RwynX0.png)
 ![](https://i.imgur.com/gQJ4xko.png)
-![](https://i.imgur.com/lU5Xhl2.png)
+![](https://i.imgur.com/3oQyaA1.png)
+
 
 
 
 ## Team
 
-**Fatma Badri** - Prototyping, HTML/Bootstrap
+**Fatma Badri** - Prototyping, HTML/Bootstrap - HOME/BOOKS/ABOUT US
 
-**Kulveer Brar** - Prototyping/Design, CSS/SASS
+**Kulveer Brar** - Prototyping/Design, CSS/SASS - CONTACT 
 
-**Mandeep Dhillon** - Prototyping/Design, CSS/SASS
+**Mandeep Dhillon** - Prototyping/Design, CSS/SASS - REGISTRATION/CART
 
 **Yaroslav Naftulyev** - Project Management, JS/JQuery
 
-**Simon Currie** - Project Management, Code Review, JS/JQuery, Bootstrap Support'
+**Simon Currie** - Project Management, Code Review, JS/JQuery, Bootstrap Support - CHECKOUT
 
 ## Technology
 HTML, CSS, Bootstrap, SASS, JavaScript and JQuery

@@ -1,20 +1,48 @@
 footer {
     background-color: $dark-color;
-    color: whitesmoke;
+    color: $lightest-color;
     text-decoration: none;
-    .about-footer {
-        text-decoration: none;
-    }
+    padding-bottom: 20px;
+   
     .container {
-        padding-top: 20px;
         display: grid;
+        padding-top: 20px;
         grid-template-columns: 20% 20% 30% 30%;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 50% 50%;
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: $padding;
+    }
+
+   
+}
+
+.about-footer{
+    grid-template-rows: 1/3;
+    
+}
+
+.cart-footer{
+    grid-template-rows: 1/3;
+}
+
+.social-footer{
+    align-self: end;
+    text-align: start;
+    padding-left: 20px;
+}
+.contact-us-footer{
+    text-align: center;
+    padding-left: 100px;
 }
 
 .contact li {
     display: inline;
+    align-content: space-between;
+    padding: $padding;
 }
 
 .map {

@@ -1,8 +1,13 @@
 nav{
     background-color: $dark-color;
     
+    .navbar-brand{
+        font-size: 25px;
+    }
     
-    button, a{
+   a{
         color: $lightest-color;
+        font-weight: bold;
+        font-size: larger;
 }
 }

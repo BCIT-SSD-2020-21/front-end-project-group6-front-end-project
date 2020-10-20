@@ -124,8 +124,12 @@ table {
 
 nav {
   background-color: #5a7591; }
-  nav button, nav a {
-    color: #fafafb; }
+  nav .navbar-brand {
+    font-size: 25px; }
+  nav a {
+    color: #fafafb;
+    font-weight: bold;
+    font-size: larger; }
 
 header {
   background-color: #5a7591; }
@@ -133,11 +137,10 @@ header {
 footer {
   background-color: #5a7591;
   color: #fafafb;
-  text-decoration: none;
-  padding-bottom: 20px; }
+  padding-bottom: 1%; }
   footer .container {
     display: grid;
-    padding-top: 20px;
+    padding-top: 1%;
     grid-template-columns: 20% 20% 30% 30%;
     grid-template-rows: 50% 50%; }
   footer a {
@@ -145,25 +148,21 @@ footer {
     color: white;
     padding: 3px; }
 
-.about-footer {
-  grid-template-rows: 1/3; }
-
 .cart-footer {
-  grid-template-rows: 1/3; }
+  text-align: start;
+  padding-left: 20%; }
 
 .social-footer {
-  align-self: end;
+  align-self: start;
   text-align: start;
-  padding-left: 20px; }
+  padding-left: 30%; }
 
 .contact-us-footer {
   text-align: center;
-  padding-left: 100px; }
+  padding-left: 8%; }
 
 .contact li {
-  display: inline;
-  align-content: space-between;
-  padding: 3px; }
+  display: inline; }
 
 .map {
   grid-row: 2/2;

@@ -130,6 +130,9 @@ nav {
     color: #fafafb;
     font-size: large; }
 
+.banner {
+  margin-top: 63px; }
+
 header {
   background-color: #5a7591; }
 
@@ -159,7 +162,7 @@ footer {
     grid-template-rows: 50% 50%; }
   footer a {
     text-decoration: none;
-    color: white;
+    color: #fafafb;
     padding: 3px; }
 
 .cart-footer {

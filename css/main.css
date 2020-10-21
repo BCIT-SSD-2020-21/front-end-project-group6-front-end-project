@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -83,14 +84,17 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -102,51 +106,66 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+    display: block;
+}
 
 body {
-  line-height: 1; }
+    line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+    list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+    quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+    content: '';
+    content: none;
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 header {
-  background-color: #5a7591; }
+    background-color: #5a7591;
+}
 
 footer {
-  background-color: #5a7591;
-  color: whitesmoke;
-  text-decoration: none; }
-  footer .about-footer {
-    text-decoration: none; }
-  footer .container {
+    background-color: #5a7591;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer .about-footer {
+    text-decoration: none;
+}
+
+footer .container {
     padding-top: 20px;
     display: grid;
     grid-template-columns: 20% 20% 30% 30%;
-    grid-template-rows: 40% 60%; }
+    grid-template-rows: 40% 60%;
+}
 
 .contact li {
-  display: inline; }
+    display: inline;
+}
 
 .map {
-  grid-row: 2/2;
-  grid-column: 1/5;
-  text-align: end; }
+    grid-row: 2/2;
+    grid-column: 1/5;
+    text-align: end;
+}
+
 
 /*# sourceMappingURL=main.css.map */

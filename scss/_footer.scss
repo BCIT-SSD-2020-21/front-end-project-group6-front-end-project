@@ -1,24 +1,42 @@
-        footer {
-            background-color: $dark-color;
-            color: whitesmoke;
-            text-decoration: none;
-            .about-footer {
-                text-decoration: none;
-            }
-            .container {
-                padding-top: 20px;
-                display: grid;
-                grid-template-columns: 20% 20% 30% 30%;
-                grid-template-rows: 40% 60%;
-            }
-        }
-        
-        .contact li {
-            display: inline;
-        }
-        
-        .map {
-            grid-row: 2/2;
-            grid-column: 1/5;
-            text-align: end;
-        }
+footer {
+    background-color: $dark-color;
+    color: $lightest-color;
+    padding-bottom: $padding1/2;
+    .container {
+        display: grid;
+        padding-top: $padding1/2;
+        grid-template-columns: 20% 20% 30% 30%;
+        grid-template-rows: 50% 50%;
+    }
+    a {
+        text-decoration: none;
+        color: $lightest-color;
+        padding: $padding;
+    }
+}
+
+.cart-footer {
+    text-align: start;
+    padding-left: 20%;
+}
+
+.social-footer {
+    align-self: start;
+    text-align: start;
+    padding-left: 30%;
+}
+
+.contact-us-footer {
+    text-align: center;
+    padding-left: 8%;
+}
+
+.contact li {
+    display: inline;
+}
+
+.map {
+    grid-row: 2/2;
+    grid-column: 1/5;
+    text-align: end;
+}

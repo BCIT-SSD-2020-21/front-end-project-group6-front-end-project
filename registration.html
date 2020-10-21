@@ -83,7 +83,7 @@
               <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">Contact Us</a>
+              <a class="nav-link" href="registration.html">Log In</a>
             </li>
           </ul>
         </div>
@@ -91,12 +91,13 @@
     </nav>
 
     <!--Container for Registration & Log In-->
-    <div class="d-flex">
+    <div class="d-flex m-5 p-5">
       <!--Register form-->
       <!---------------------------------------------------------------------------------------------->
-      <div class="container m-10 p-2">
-        <h2 class="h2">Register</h2>
-        <form>
+      <div class="container-fluid m-10 pt-5">
+        <h2 class="font-weight-bold">Register</h2>
+
+        <form class="p-top-2">
           <div class="form-group row">
             <label for="inputFirstName" class="col-sm-2 col-form-label"
               >First Name</label
@@ -116,7 +117,7 @@
             >
             <div class="col-sm-10">
               <input
-                type="email"
+                type="text"
                 class="form-control"
                 id="inputLastName"
                 placeholder="Enter your Last Name"
@@ -137,43 +138,44 @@
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputEmail" class="col-sm-2 col-form-label">User</label>
+            <label for="inputUser" class="col-sm-2 col-form-label"
+              >Username</label
+            >
             <div class="col-sm-10">
               <input
-                type="email"
+                type="password"
                 class="form-control"
-                id="inputEmail"
+                id="inputUser"
                 placeholder="Enter your Username"
               />
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputEmail" class="col-sm-2 col-form-label"
+            <label for="inputPassword" class="col-sm-2 col-form-label"
               >Password</label
             >
             <div class="col-sm-10">
               <input
-                type="email"
+                type="password"
                 class="form-control"
-                id="inputEmail"
+                id="inputPassword"
                 placeholder="Enter your Password"
               />
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputEmail" class="col-sm-2 col-form-label"
+            <label for="inputConfirmPassword" class="col-sm-2 col-form-label"
               >Password</label
             >
             <div class="col-sm-10">
               <input
-                type="email"
+                type="password"
                 class="form-control"
-                id="inputEmail"
+                id="inputConfirmPassword"
                 placeholder="Confirm your Password"
               />
             </div>
           </div>
-
           <div class="form-group row">
             <div class="form-button col-sm-12">
               <button type="submit" class="btn btn-primary">Register</button>
@@ -185,36 +187,35 @@
 
       <!--Login form-->
       <!---------------------------------------------------------------------------------------------->
-      <div class="container m-10 p-2">
-        <h2>Log In</h2>
+      <div class="container-fluid m-10 pt-5">
+        <h2 class="font-weight-bold">Log In</h2>
         <form>
           <div class="form-group row">
-            <label for="inputFirstName" class="col-sm-2 col-form-label"
+            <label for="inputUser" class="col-sm-2 col-form-label"
               >Username</label
             >
             <div class="col-sm-10">
               <input
-                type="text"
+                type="password"
                 class="form-control"
-                id="inputFirstName"
+                id="inputUser"
                 placeholder="Enter your Username"
               />
             </div>
           </div>
           <div class="form-group row">
-            <label for="inputEmail" class="col-sm-2 col-form-label"
+            <label for="inputPassword" class="col-sm-2 col-form-label"
               >Password</label
             >
             <div class="col-sm-10">
               <input
-                type="email"
+                type="password"
                 class="form-control"
-                id="inputEmail"
+                id="inputPassword"
                 placeholder="Enter your Password"
               />
             </div>
           </div>
-
           <div class="form-group row">
             <div class="form-button col-sm-12">
               <button type="submit" class="btn btn-primary">Log in</button>

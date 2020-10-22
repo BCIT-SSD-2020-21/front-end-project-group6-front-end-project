@@ -101,13 +101,23 @@ $(".rm-btn-6").click(function(){
  });
 
 
-
-
-
-
-
-
 //Remove expected shipping delivery date
+//When items are all hidden
+if($(".hide-item-1").is(":hidden")){
+    $(".hide-item-6").hide();
+    $(".hide-hr-6").hide();
+}
+
+if ($(".hide-item-1").is(":hidden")) { 
+  
+    alert(" Hidden Element."); 
+} else { 
+    alert("Element Visible."); 
+} 
+
+
+
+
 //Research jquery for it
 
 //Adjust item count

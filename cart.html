@@ -71,15 +71,15 @@
                     <!-- Card -->
                     <h5 class="mb-4">Cart (<span>2</span> items)</h5>
 
+                    <!-- Cart Item 1 -->
                     <div class="mt-3">
                         <div class="pt-4 wish-list">
 
                             <h5 class="mb-4">Cart (<span>2</span> items)</h5>
-
-                            <div class="row mb-4">
+                            <div class="row mb-4 hide-item-1">
                                 <div class="col-md-5 col-lg-3 col-xl-3">
                                     <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                                        <img class="img-fluid w-100" src="images/Coding_for_Beginners.jpg" alt="coding for beginners">
+                                        <img class="img-fluid w-100" src="images/Coding_for_Beginners.jpg" alt="Coding for beginners">
 
                                     </div>
                                 </div>
@@ -104,9 +104,9 @@
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div>
-                                                <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                                <a href="#!" type="button" class="rm-btn-1 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
                                   class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                                <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                                                <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
                                   class="fas fa-heart mr-1"></i> Move to wish list </a>
                                             </div>
                                             <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
@@ -114,16 +114,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="mb-4">
+                            <!--------------->
+
+                            <!-- Cart Item 2 -->
+                            <hr class="mb-4 hide-hr-2">
                             <div class="mb-3">
                                 <div class="pt-4 wish-list">
 
-
-
-                                    <div class="row mb-4">
+                                    <div class="row mb-4 hide-item-2">
                                         <div class="col-md-5 col-lg-3 col-xl-3">
                                             <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                                                <img class="img-fluid w-100" src="images/Database_Development_For_Dummies.webp" alt="Database Development">
+                                                <img class="img-fluid w-100" src="images/Javascript_for_Beginners.jpg" alt="Javascript_for_Beginners">
 
                                             </div>
                                         </div>
@@ -131,7 +132,54 @@
                                             <div>
                                                 <div class="d-flex justify-content-between">
                                                     <div>
-                                                        <h5>Database Development For Dummies</h5>
+                                                        <h5>Javascript for Beginners</h5>
+                                                        <p class="mb-3 text-muted text-uppercase small">Front end - Book</p>
+                                                        <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="def-number-input number-input safari_only mb-0 w-100">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
+                                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
+                                                        </div>
+                                                        <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                        (Note, 1 Book)
+                                      </small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <a href="#!" type="button" class="rm-btn-2 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
+                                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                                                        <a href="#!" type="button" class="add-btn-1 btn btn-secondary card-link-secondary small text-uppercase"><i
+                                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                                                    </div>
+                                                    <p class="mb-0"><span><strong id="summary">$30.00</strong></span></p class="mb-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------->
+
+                            <!-- Cart Item 3 -->
+                            <hr class="mb-4 hide-hr-3">
+                            <div class="mb-3">
+                                <div class="pt-4 wish-list">
+                                    
+                                    <div class="row mb-4 hide-item-3">
+                                        <div class="col-md-5 col-lg-3 col-xl-3">
+                                            <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                                                <img class="img-fluid w-100" src="images/SQL_Programming_For_Beginners.png" alt="SQL_Programming_For_Beginners">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-9 col-xl-9">
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h5>SQL Programming For Beginners</h5>
                                                         <p class="mb-3 text-muted text-uppercase small">Databases - Book</p>
                                                         <p class="mb-2 text-muted text-uppercase small">Order By</p>
                                                     </div>
@@ -148,9 +196,9 @@
                                                 </div>
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <div>
-                                                        <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                                        <a href="#!" type="button" class="rm-btn-3 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
                                           class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                                        <a href="#!" type="button" class="card-link-secondary small text-uppercase"><i
+                                                        <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
                                           class="fas fa-heart mr-1"></i> Move to wish list </a>
                                                     </div>
                                                     <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
@@ -160,12 +208,157 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding items to your cart does not mean booking them.</p>
+                            <!--------------->
 
+                            <!-- Cart Item 4 -->
+                            <hr class="mb-4 hide-hr-4">
+                            <div class="mb-3">
+                                <div class="pt-4 wish-list">
+
+
+
+                                    <div class="row mb-4 hide-item-4">
+                                        <div class="col-md-5 col-lg-3 col-xl-3">
+                                            <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                                                <img class="img-fluid w-100" src="images/Database_Management_System.jpg" alt="Database_Management_System">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-9 col-xl-9">
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h5>Database Management System</h5>
+                                                        <p class="mb-3 text-muted text-uppercase small">Databases - Book</p>
+                                                        <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="def-number-input number-input safari_only mb-0 w-100">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
+                                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
+                                                        </div>
+                                                        <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                        (Note, 1 Book)
+                                      </small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <a href="#!" type="button" class="rm-btn-4 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
+                                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                                                        <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
+                                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                                                    </div>
+                                                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------->
+
+                            <!-- Cart Item 5 -->
+                            <hr class="mb-4 hide-hr-5">
+                            <div class="mb-3">
+                                <div class="pt-4 wish-list">
+
+
+
+                                    <div class="row mb-4 hide-item-5">
+                                        <div class="col-md-5 col-lg-3 col-xl-3">
+                                            <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                                                <img class="img-fluid w-100" src="images/Sql_Database_Programming.jpg" alt="Sql_Database_Programming">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-9 col-xl-9">
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h5>SQL Database Programming</h5>
+                                                        <p class="mb-3 text-muted text-uppercase small">Databases - Book</p>
+                                                        <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="def-number-input number-input safari_only mb-0 w-100">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
+                                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
+                                                        </div>
+                                                        <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                        (Note, 1 Book)
+                                      </small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <a href="#!" type="button" class="rm-btn-5 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
+                                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                                                        <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
+                                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                                                    </div>
+                                                    <p class="mb-0"><span><strong id="summary">$30.00</strong></span></p class="mb-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------->
+
+                            <!-- Cart Item 6 -->
+                            <hr class="mb-4 hide-hr-6">
+                            <div class="mb-3">
+                                <div class="pt-4 wish-list">
+
+                                    <div class="row mb-4 hide-item-6">
+                                        <div class="col-md-5 col-lg-3 col-xl-3">
+                                            <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                                                <img class="img-fluid w-100" src="images/Essentials_of_Web_Database_Development.png" alt="Essentials_of_Web_Database_Development">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-9 col-xl-9">
+                                            <div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h5>Essential of Web Database Development</h5>
+                                                        <p class="mb-3 text-muted text-uppercase small">Databases - Book</p>
+                                                        <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="def-number-input number-input safari_only mb-0 w-100">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
+                                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
+                                                        </div>
+                                                        <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                        (Note, 1 Book)
+                                      </small>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <a href="#!" type="button" class="rm-btn-6 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
+                                          class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                                                        <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
+                                          class="fas fa-heart mr-1"></i> Move to wish list </a>
+                                                    </div>
+                                                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------->
+                            <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding items to your cart does not mean booking them.</p>
+                        
                         </div>
                     </div>
-                    <!-- Card -->
-
+                           
                     <!-- Card -->
                     <div class="mb-3">
                         <div class="pt-4">
@@ -324,6 +517,13 @@
     <!-- End of Footer -->
 
     <script src="js/script.js" async defer></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                location.reload(true);
+            });
+        });
+    </script>
 </body>
 
 </html>

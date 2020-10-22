@@ -17,11 +17,14 @@
 //     console.log("Button was clicked")
 // });
 
+//Remove Item-1
+$(".rm-btn-1").click(function(){
+    $(".hide-item-1").hide();
+ });
 
-$(".btn-danger").click(function(){
-    $(".btn-danger").hide();
-
-
+//Remove Item-2
+$(".rm-btn-2").click(function(){
+    $(".hide-item-2").hide();
  });
 
 

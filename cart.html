@@ -76,7 +76,6 @@
                         <div class="pt-4 wish-list">
 
                             <h5 class="mb-4">Cart (<span>2</span> items)</h5>
-
                             <div class="row mb-4 hide-item-1">
                                 <div class="col-md-5 col-lg-3 col-xl-3">
                                     <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
@@ -152,7 +151,7 @@
                                                     <div>
                                                         <a href="#!" type="button" class="rm-btn-2 btn btn-danger card-link-secondary small text-uppercase mr-3"><i
                                           class="fas fa-trash-alt mr-1"></i> Remove item </a>
-                                                        <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
+                                                        <a href="#!" type="button" class="add-btn-1 btn btn-secondary card-link-secondary small text-uppercase"><i
                                           class="fas fa-heart mr-1"></i> Move to wish list </a>
                                                     </div>
                                                     <p class="mb-0"><span><strong id="summary">$30.00</strong></span></p class="mb-0">
@@ -168,8 +167,7 @@
                             <hr class="mb-4 hide-hr-3">
                             <div class="mb-3">
                                 <div class="pt-4 wish-list">
-
-
+                                    
                                     <div class="row mb-4 hide-item-3">
                                         <div class="col-md-5 col-lg-3 col-xl-3">
                                             <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
@@ -519,6 +517,13 @@
     <!-- End of Footer -->
 
     <script src="js/script.js" async defer></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                location.reload(true);
+            });
+        });
+    </script>
 </body>
 
 </html>

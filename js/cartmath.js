@@ -25,5 +25,5 @@ var taxOwing = (subTotal * 1.12)
 
 if (cartItem == null){
     document.write("Your Cart is Empty!");
-}   else {document.write("Your Subtotal is: " + "$" + subTotal + "<br>" + "+ Tax at 12% = " + taxOwing + "<br>" + "+ Shipping = $" + shippingFee + "<hr" + "Your total = " + (subTotal + taxOwing + Number(shippingFee)));
+}   else {document.write("Your Subtotal is: " + "$" + subTotal + "<br>" + "+ Tax at 12% = " + taxOwing + "<br>" + "+ Shipping = $" + shippingFee + "<hr>" + "Your total = " + (subTotal + taxOwing + Number(shippingFee)));
 }

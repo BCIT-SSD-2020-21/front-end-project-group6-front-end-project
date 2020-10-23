@@ -94,8 +94,51 @@
                             <input type="text" name="last_name" class="form-control" value="" />
                         </div>
                     </div>
+                    
                     <div class="form-group">
-                        <div class="col-md-12"><strong>Address:</strong></div>
+                        <div class="col-md-12"><strong>Primary Phone Number:</strong></div>
+                        <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12"><strong>Alternate Phone Number:</strong></div>
+                        <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12"><strong>Email Address:</strong></div>
+                        <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
+                    </div>
+                </div>
+
+
+                <div class="panel-heading">
+                    <h4>Billing Address</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 col-xs-12">
+                            <strong>First Name:</strong>
+                            <input type="text" name="first_name" class="form-control" value="" />
+                        </div>
+                        <div class="span1"></div>
+                        <div class="col-md-6 col-xs-12">
+                            <strong>Last Name:</strong>
+                            <input type="text" name="last_name" class="form-control" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12"><strong>Address Line 1:</strong></div>
+                        <div class="col-md-12">
+                            <input type="text" name="address" class="form-control" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12"><strong>Address Line 2:</strong></div>
                         <div class="col-md-12">
                             <input type="text" name="address" class="form-control" value="" />
                         </div>
@@ -107,33 +150,36 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-12"><strong>State:</strong></div>
+                        <div class="col-md-12"><strong>Province</strong></div>
                         <div class="col-md-12">
-                            <input type="text" name="state" class="form-control" value="" />
+                            <input type="text" name="Province" class="form-control" value="" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-12"><strong>Zip / Postal Code:</strong></div>
+                        <div class="col-md-12"><strong>Country</strong></div>
                         <div class="col-md-12">
-                            <input type="text" name="zip_code" class="form-control" value="" />
+                            <input type="text" name="Country" class="form-control" value="" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-md-12"><strong>Phone Number:</strong></div>
-                        <div class="col-md-12"><input type="text" name="phone_number" class="form-control" value="" /></div>
+                        <div class="col-md-12"><strong>Postal Code:</strong></div>
+                        <div class="col-md-12">
+                            <input type="text" name="Postal_code" class="form-control" value="" />
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <div class="col-md-12"><strong>Email Address:</strong></div>
-                        <div class="col-md-12"><input type="text" name="email_address" class="form-control" value="" /></div>
-                    </div>
+                   
                 </div>
+
+
+
+                <!----put second here-->
             </div>
 
             <!--SHIPPING METHOD END-->
             <div class="aside">
                 <!--CREDIT CART PAYMENT-->
                 <div class="panel panel-info">
-                    <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span>Payment Details</div>
+                    <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span><h4>Payment Details</h4></div>
                     <div class="panel-body">
                         <div class="form-group">
                             <div class="col-md-12"><strong>Card Type:</strong></div>
@@ -205,18 +251,78 @@
                                 <div class="clearfix"></div>
                             </div>
                         </div>
+                     
+                    </div>
+                    <div class="panel-heading">
+                        <h4>Shipping Address</h4>
+                    </div>
+                    <div class="panel-body">
                         <div class="form-group">
-                            <div class="col-md-6 col-sm-6 col-xs-12">
-                                <button type="submit" class="btn btn-primary btn-submit-fix">Place Order</button>
+                            <div class="col-md-12">
+    
                             </div>
                         </div>
+    
+                        <div class="form-group">
+                            <div class="col-md-6 col-xs-12">
+                                <strong>First Name:</strong>
+                                <input type="text" name="first_name" class="form-control" value="" />
+                            </div>
+                            <div class="span1"></div>
+                            <div class="col-md-6 col-xs-12">
+                                <strong>Last Name:</strong>
+                                <input type="text" name="last_name" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Address Line 1:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="address" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Address Line 2:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="address" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>City:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="city" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Province</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="Province" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Country</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="Country" class="form-control" value="" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><strong>Postal Code:</strong></div>
+                            <div class="col-md-12">
+                                <input type="text" name="Postal_code" class="form-control" value="" />
+                            </div>
+                        </div>
+                       
                     </div>
-                </div>
+                </div><!---panel end-->
+            </div><!---aside end-->
+        </div>
+        <hr>
+        <div class="form-group">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <button type="submit" class="btn btn-primary btn-submit-fix">Pay now</button>
             </div>
         </div>
         <!--CREDIT CART PAYMENT END-->
-    </div>
-    </div>
+    </div><!---container end-->
     <!-- Footer -->
     <footer>
         <div class="container">

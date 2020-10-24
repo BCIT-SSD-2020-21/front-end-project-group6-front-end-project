@@ -130,6 +130,21 @@ nav {
     color: #fafafb;
     font-size: large; }
 
+body {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.checkout-form {
+  display: grid;
+  grid-template-rows: 3% 40% 50% 7%; }
+
+.form1 {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.form2 {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
 .banner {
   margin-top: 63px; }
 

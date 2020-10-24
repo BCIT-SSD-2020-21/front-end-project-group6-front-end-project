@@ -23,10 +23,24 @@
 //   });
 
 
+//Actual Cart
+
+var cart = {
+    item1: "",
+    item2: "",
+    item3: "",
+    item4: "",
+    item5: "",
+    item6: ""
+}
+
+
+
 
 //Item addition for Cart page
 //Add Item-1
 $(".add-btn-1").click(function(){
+    // Make it go add to cart when button is clicked
     $(".hide-item-1").show();
     $(".hide-hr-1").show();
  });
@@ -69,8 +83,8 @@ $(".add-btn-6").click(function(){
 
 //Remove Item-1
 $(".rm-btn-1").click(function(){
-    $(".hide-item-1").hide();
-    $(".hide-hr-1").hide();
+    // Call function remove from cart
+    remFromCart(this)
  });
 
 //Remove Item-2
@@ -104,9 +118,19 @@ $(".rm-btn-6").click(function(){
  });
 
 //Removal Item function
-// function addtoCart(.rm-btn-1){
+ function remFromCart(remButtonRef){
+    if(remButtonRef = ".rm-btn-1"){
+        cart.item1 = ""
+    }
+    render
+ }
 
-// }
+//  function renderCart(remButtonRef){
+
+
+
+
+//  }
 
 
 

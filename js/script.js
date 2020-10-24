@@ -144,10 +144,6 @@ $("#rm-btn-6").click(function(){
  });
 
 
-
-
-
-
 //Removal Item function
  function remFromCart(remButtonRef){
     if(remButtonRef.id == "rm-btn-1"){
@@ -196,9 +192,6 @@ function addtoCart(addButtonRef){
     renderCart();
  }
 
-
-
-
   function renderCart(remButtonRef){
     document.getElementById("cart1").value = cart.item1;
     document.getElementById("cart2").value = cart.item2;
@@ -208,29 +201,6 @@ function addtoCart(addButtonRef){
     document.getElementById("cart6").value = cart.item6;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Remove expected shipping delivery date
 //When items are all hidden
 // if($(".hide-item-1").is(":hidden")){
@@ -238,28 +208,28 @@ function addtoCart(addButtonRef){
 //     $(".hide-hr-6").hide();
 // }
 
-setInterval(visibilityStat, 3000)
+// setInterval(visibilityStat, 3000)
 
-var allItemHidden = ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden"))
+// var allItemHidden = ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden")) && ($(".hide-item-1").is(":hidden"))
 
-var item1visibility = ($(".hide-item-1").is(":hidden"))
-var item2visibility = ($(".hide-item-2").is(":hidden"))
-var item3visibility = ($(".hide-item-3").is(":hidden"))
-var item4visibility = ($(".hide-item-4").is(":hidden"))
-var item5visibility = ($(".hide-item-5").is(":hidden"))
-var item6visibility = ($(".hide-item-6").is(":hidden"))
+// var item1visibility = ($(".hide-item-1").is(":hidden"))
+// var item2visibility = ($(".hide-item-2").is(":hidden"))
+// var item3visibility = ($(".hide-item-3").is(":hidden"))
+// var item4visibility = ($(".hide-item-4").is(":hidden"))
+// var item5visibility = ($(".hide-item-5").is(":hidden"))
+// var item6visibility = ($(".hide-item-6").is(":hidden"))
 
-var itemAllvisibility = item1visibility && item2visibility && item3visibility && item4visibility && item5visibility && item6visibility
+// var itemAllvisibility = item1visibility && item2visibility && item3visibility && item4visibility && item5visibility && item6visibility
 
- console.log(itemAllvisibility)
+//  console.log(itemAllvisibility)
 
 
-function visibilityStat() {
-if (itemAllvisibility) { 
-    console.log(itemAllvisibility)
-} else { 
-} 
-}
+// function visibilityStat() {
+// if (itemAllvisibility) { 
+//     console.log(itemAllvisibility)
+// } else { 
+// } 
+// }
 //Research jquery for it
 
 //Adjust item count

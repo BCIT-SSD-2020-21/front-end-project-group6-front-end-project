@@ -163,7 +163,7 @@ $("#rm-btn-6").click(function(){
         cart.item4 = "Hello"
     }
     else if(remButtonRef.id == "rm-btn-5"){
-        cart.item5 == "Hello"
+        cart.item5 = "Hello"
     }
     else if(remButtonRef.id == "rm-btn-6"){
         cart.item6 = "Hello"
@@ -187,7 +187,7 @@ function addtoCart(addButtonRef){
         cart.item4 = "Test"
     }
     else if(addButtonRef.id == "add-btn-5"){
-        cart.item5 == "Test"
+        cart.item5 = "Test"
     }
     else if(addButtonRef.id == "add-btn-6"){
         cart.item6 = "Test"

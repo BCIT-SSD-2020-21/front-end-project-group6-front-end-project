@@ -1,4 +1,4 @@
-form{
+form {
     border: 1px;
     padding: $padding1;
     margin-bottom: $padding1;
@@ -6,16 +6,17 @@ form{
     margin-left: 10%;
     margin-right: 10%;
     background-color: $light-color;
-
 }
 
-.form-button{
+.form-button {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-
-
+.login-form {
+    display: grid;
+    align-items: center;
+}

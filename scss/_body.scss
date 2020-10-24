@@ -4,16 +4,26 @@ body{
 
 .checkout-form{
     display: grid;
-    grid-template-rows: 3% 40% 50% 7%;
+    grid-template-rows: 5% 40% 45% 10%;
 
 }
 
+.Billing_Contact{
+    border-bottom: 1px solid black;
+}
+
 .form1{
+
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 10px;
 }
 
 .form2{
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.pay_now{
+    border-top: 1px solid black;
 }

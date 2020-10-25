@@ -30,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                   </a>
@@ -49,7 +49,7 @@
                             <i class="fa fa-user-circle" style="font-size: 32px"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="cart.html">
                             <i class="fa fa-shopping-cart" style="font-size: 32px"></i
                   ></a>
@@ -63,9 +63,9 @@
 
     <!--Container starts-->
     <div class="container">
-        <div class="checkout-form">
+        <div class="checkout-form pt-5">
 
-            <div class="Billing_header text-center">
+            <div class="Billing_header text-left mt-2">
                 <h3>Payment & Billing Details</h3>
             </div>
 
@@ -116,7 +116,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">Card Type</div>
                             <div class="col-md-12">
-                                <select id="CreditCardType" name="CreditCardType" class="form-control" style="height: 30px;">
+                                <select id="CreditCardType" name="CreditCardType" class="form-control" style="height: 30px; font-size: 14px;">
                                     <option value="5">Visa</option>
                                     <option value="6">MasterCard</option>
                                     <option value="7">American Express</option>
@@ -135,7 +135,7 @@
                         <div class="form-group row">
                             <div class="col-md-12">Expiration Date</div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" name="" style="height: 30px;">
+                                <select class="form-control" name="" style="height: 30px; font-size: 14px;">
                                             <option value="">Month</option>
                                             <option value="01">01</option>
                                             <option value="02">02</option>
@@ -152,7 +152,7 @@
                                         </select>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" name="" style="height: 30px;">
+                                <select class="form-control" name="" style="height: 30px; font-size: 14px;">
                                             <option value="">Year</option>
                                             <option value="2015">2020</option>
                                             <option value="2016">2021</option>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4 col-xs-12">
-                                <select class="form-control" name="Province" style="height: 30px;">
+                                <select class="form-control" name="Province" style="height: 30px; font-size: 14px;">
                                         <option value="">Province</option>
                                         <option value="01">AB</option>
                                         <option value="02">BC</option>
@@ -230,13 +230,13 @@
                                     </select>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <select class="form-control" name="Province" style="height: 30px;">
+                                <select class="form-control" name="Province" style="height: 30px; font-size: 14px;">
                                         <option value="">Country</option>
                                         <option value="01">Canada</option>
                                     </select>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px;" />
+                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px; font-size: 14px;"/>
                             </div>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-4 col-xs-12">
-                                <select class="form-control" name="Province" style="height: 30px;">
+                                <select class="form-control" name="Province" style="height: 30px; font-size: 14px;">
                                         <option value="">Province</option>
                                         <option value="01">AB</option>
                                         <option value="02">BC</option>
@@ -291,26 +291,26 @@
                                     </select>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <select class="form-control" name="Province" style="height: 30px;">
+                                <select class="form-control" name="Province" style="height: 30px; font-size: 14px;">
                                         <option value="">Country</option>
                                         <option value="01">Canada</option>
                                     </select>
                             </div>
                             <div class="col-md-4 col-xs-12">
-                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px;" />
+                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px; font-size: 14px;" />
                             </div>
                         </div>
                     </div>
                     <!--check-body ends-->
                 </div>
                 <!--check4 ends-->
-
-                <div class="pay_now form-group">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <button type="submit" class="btn btn-primary btn-submit-fix">Pay now</button>
-                    </div>
+            
+            </div>
+            
+            <div class="pay_now form-group">
+                <div class="col-md-12 col-sm-12 col-xs-12 mt-5 mb-5 text-right">
+                    <button type="submit" class="btn btn-primary btn-submit-fix">Pay now</button>
                 </div>
-
             </div>
             <!--form2 end-->
         </div>

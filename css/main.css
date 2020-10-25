@@ -191,36 +191,35 @@ h2 {
 footer {
   background-color: #5a7591;
   color: #fafafb;
-  padding-bottom: 1%; }
-  footer .container {
-    display: grid;
-    padding-top: 1%;
-    grid-template-columns: 20% 20% 30% 30%;
-    grid-template-rows: 50% 50%; }
+  padding-bottom: 1%;
+  padding-top: 1%; }
+  footer .about-footer ul, footer .cart-footer ul, footer h5, footer .social-footer ul, footer .contact-us-footer ul {
+    text-align: center; }
+  footer .about-footer li, footer .cart-footer li, footer .contact li, footer .social-footer li {
+    display: inline; }
   footer a {
     text-decoration: none;
     color: #fafafb;
     padding: 3px; }
+  footer .map {
+    text-align: center; }
 
-.cart-footer {
-  text-align: start;
-  padding-left: 20%; }
-
-.social-footer {
-  align-self: start;
-  text-align: start;
-  padding-left: 30%; }
-
-.contact-us-footer {
-  text-align: center;
-  padding-left: 8%; }
-
-.contact li {
-  display: inline; }
-
-.map {
-  grid-row: 2/2;
-  grid-column: 1/5;
-  text-align: end; }
+@media screen and (min-width: 670px) {
+  footer .container {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-rows: 50% 50%; }
+  footer .about-footer li, footer .cart-footer li {
+    display: block; }
+  footer .cart-footer {
+    padding-left: 20%; }
+  footer .social-footer {
+    padding-left: 30%; }
+  footer .contact-us-footer {
+    padding-left: 20%; }
+  footer .map {
+    grid-row: 2/2;
+    grid-column: 1/5;
+    text-align: end; } }
 
 /*# sourceMappingURL=main.css.map */

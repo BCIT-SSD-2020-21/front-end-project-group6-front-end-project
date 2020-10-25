@@ -131,13 +131,17 @@ nav {
     font-size: large; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: red; }
 
 .checkout-form {
   display: grid;
   grid-template-rows: 5% 40% 45% 10%; }
 
-.check1, .check2, .check3, .check4 {
+.check1,
+.check2,
+.check3,
+.check4 {
   padding: 30px; }
 
 .Billing_header {
@@ -155,8 +159,12 @@ body {
   .form2 {
     display: grid;
     grid-template-columns: 50% 50%; } }
+.jumbotron {
+  background-color: #5a7591; }
+
 .banner {
-  margin-top: 63px; }
+  padding-left: 0px;
+  padding-right: 0px; }
 
 header {
   background-color: #5a7591; }

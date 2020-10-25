@@ -5,17 +5,13 @@
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>WALKABOOKS</title>
+
     <!--Customized CSS Styling-->
     <link href="css/main.css" rel="stylesheet">
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!--jQuery, Popper.js, and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                   </a>
@@ -52,7 +48,7 @@
                             <i class="fa fa-user-circle" style="font-size: 32px"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="cart.html">
                             <i class="fa fa-shopping-cart" style="font-size: 32px"></i
                   ></a>
@@ -70,10 +66,7 @@
             <div class="row py-10">
 
                 <!--Grid column-->
-                <div class="col-lg-8">
-
-                    <!-- Card -->
-                    <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+                <div class="cart col-lg-8 sm-12">
 
                     <!-- Cart Item 1 -->
                     <div class="mt-3">
@@ -96,7 +89,7 @@
                                                 <p class="mb-2 text-muted text-uppercase small">Order By</p>
                                             </div>
                                             <div>
-                                                <div class="def-number-input number-input safari_only mb-0 w-100">
+                                                <div class="def-number-input number-input md-0 w-100">
                                                     <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
                                                     <input class="quantity" min="0" name="quantity" value="1" type="number">
                                                     <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
@@ -531,6 +524,11 @@
         <!-- End of Footer -->
 
         <script src="js/script.js" async defer></script>
+        <!--jQuery, Popper.js, and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

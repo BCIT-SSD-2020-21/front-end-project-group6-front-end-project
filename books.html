@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+
+<html lang="en">
   <head>
     <!-- Meta Tags -->
     <meta charset="utf-8" />
@@ -47,13 +44,6 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy"
-        >You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.</p
-      >
-    <![endif]-->
-
     <!-- Top Navigation Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
@@ -88,14 +78,14 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="registration.html">
-                <i class="fa fa-user-circle" style="font-size: 32px"></i>Log
-                In</a
-              >
+                <i class="fa fa-user-circle" style="font-size: 32px"></i>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cart.html">
-                <i class="fa fa-shopping-cart" style="font-size: 32px"></i
-              ></a>
+                <i class="fa fa-shopping-cart" style="font-size: 32px"></i>
+                <span id="cart-icon-count">0</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -200,7 +190,13 @@
                 <div class="card-body">
                   <h6 class="card-title">Coding for Beginners</h6>
                   <p class="card-text">$25</p>
-                  <a href="#" id="add-btn-1" class="btn btn-primary" >Add to Cart</a>
+                  <a
+                    href="#"
+                    type="button"
+                    id="add-btn-1"
+                    class="btn btn-primary"
+                    >Add to Cart</a
+                  >
                 </div>
                 <a
                   href="#!"
@@ -218,7 +214,12 @@
                 <div class="card-body">
                   <h6 class="card-title">Javascript for Beginners</h6>
                   <p class="card-text">$30</p>
-                  <a href="#" type="button" id="add-btn-2" class="btn btn-primary" >Add to Cart</a
+                  <a
+                    href="#"
+                    type="button"
+                    id="add-btn-2"
+                    class="btn btn-primary"
+                    >Add to Cart</a
                   >
                 </div>
               </div>
@@ -231,7 +232,16 @@
                 <div class="card-body">
                   <h6 class="card-title">SQL Programming For Beginners</h6>
                   <p class="card-text">$25</p>
-                  <a href="#" id="add-btn-3" class="btn btn-primary" >Add to Cart</a>
+                  <a href="#" id="add-btn-3" class="btn btn-primary"
+                    >Add to Cart</a
+                  >
+                  <a
+                    href="#!"
+                    id="add-btn-5"
+                    type="button"
+                    class="btn btn-secondary card-link-secondary small text-uppercase"
+                    ><i class="fas fa-heart mr-1"></i> Move to wish list
+                  </a>
                 </div>
               </div>
             </div>
@@ -253,7 +263,9 @@
                 <div class="card-body">
                   <h6 class="card-title">Database Management System</h6>
                   <p class="card-text">$25</p>
-                  <a href="#" id="add-btn-4" class="btn btn-primary" >Add to Cart</a>
+                  <a href="#" id="add-btn-4" class="btn btn-primary"
+                    >Add to Cart</a
+                  >
                 </div>
               </div>
               <div class="card">
@@ -265,7 +277,9 @@
                 <div class="card-body">
                   <h6 class="card-title">SQL Database Programming</h6>
                   <p class="card-text">$30</p>
-                  <a href="#" id="add-btn-5" class="btn btn-primary" >Add to Cart</a>
+                  <a href="#" id="add-btn-5" class="btn btn-primary"
+                    >Add to Cart</a
+                  >
                 </div>
               </div>
               <div class="card">
@@ -279,7 +293,9 @@
                     >Essential of Web Database Development</h6
                   >
                   <p class="card-text">$25</p>
-                  <a href="#" id="add-btn-6" class="btn btn-primary" >Add to Cart</a>
+                  <a href="#" id="add-btn-6" class="btn btn-primary"
+                    >Add to Cart</a
+                  >
                 </div>
               </div>
             </div>

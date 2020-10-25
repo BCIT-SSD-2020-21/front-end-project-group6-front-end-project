@@ -176,6 +176,10 @@ form {
 h2 {
   text-align: center; }
 
+.login-form {
+  display: grid;
+  align-items: center; }
+
 footer {
   background-color: #5a7591;
   color: #fafafb;

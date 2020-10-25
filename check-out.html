@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WalkaBooks</title>
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
@@ -36,16 +33,16 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">WALKABOOKS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home
-                    <span class="sr-only">(current)</span> <!---Check-->
-                    </a>
-                    </li>
                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="books.html">Books</a>
                     </li>
                     <li class="nav-item">
@@ -55,266 +52,279 @@
                         <a class="nav-link" href="contact-us.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registration.html"><i class="fa fa-user-circle" style="font-size: 32px"></i>Log In</a>
+                        <a class="nav-link" href="registration.html">
+                            <i class="fa fa-user-circle" style="font-size: 32px"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart" style="font-size: 32px"></i></a>
-                    </li>
-                </ul>
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart" style="font-size: 32px"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
+          </div>
+        </nav>
     <!--Naviagtion Ends-->
 
+
+    <!--Container starts-->
     <div class="container">
+        <div class="checkout-form">
 
-        <div class="Billing Contact panel-heading mt-5">
-            <h3>Payment & Billing Details</h3>
-        </div>
-        <hr>
-        <!--SHIPPING METHOD-->
-        <div class="container row">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h4>Billing Contact</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="form-group row">
-                        <div class="col-md-3 col-xs-12 ">
-                            <strong>First Name:</strong>
-                            <input type="text" name="first_name" class="form-control" value="" />
-                        </div>
-                        <div class="span1"></div>
-                        <div class="col-md-3 col-xs-12 ">
-                            <strong>Last Name:</strong>
-                            <input type="text" name="last_name" class="form-control" value="" />
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>Primary Phone Number:</strong></div>
-                        <div class="col-md-6"><input type="text" name="phone_number" class="form-control" value="" /></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>Alternate Phone Number:</strong></div>
-                        <div class="col-md-6"><input type="text" name="phone_number" class="form-control" value="" /></div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>Email Address:</strong></div>
-                        <div class="col-md-6"><input type="text" name="email_address" class="form-control" value="" /></div>
-                    </div>
-                </div>
-
-
-                <div class="panel-heading">
-                    <h4>Billing Address</h4>
-                </div>
-                <div class="panel-body">
-                    <div class="form-group row">
-                        <div class="col-md-3 col-xs-12 ">
-                            <strong>First Name:</strong>
-                            <input type="text" name="first_name" class="form-control" value="" />
-                        </div>
-                        <div class="span1"></div>
-                        <div class="col-md-3 col-xs-12 ">
-                            <strong>Last Name:</strong>
-                            <input type="text" name="last_name" class="form-control" value="" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>Address Line 1:</strong></div>
-                        <div class="col-md-6">
-                            <input type="text" name="address" class="form-control" value="" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>Address Line 2:</strong></div>
-                        <div class="col-md-6">
-                            <input type="text" name="address" class="form-control" value="" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6"><strong>City:</strong></div>
-                        <div class="col-md-6">
-                            <input type="text" name="city" class="form-control" value="" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                    
-                        
-                        <div class="col-md-2 col-xs-12">
-                            <input type="text" placeholder="Province" name="Province" class="form-control" value="" />
-                        </div>
-                    
-                    
-                        
-                        <div class="col-md-2 col-xs-12">
-                            <input type="text" placeholder="country" name="Country" class="form-control" value="" />
-                        </div>
-                    
-                    
-                     
-                        <div class="col-md-2 col-xs-12">
-                            <input type="text" placeholder= "Postal code" name="Postal_code" class="form-control" value="" />
-                        </div>
-                    
-                </div>
-                   
-                </div>
-
-
-
-                <!----put second here-->
+            <div class="Billing_header text-center">
+                <h3>Payment & Billing Details</h3>
             </div>
 
-            <!--SHIPPING METHOD END-->
-            <div class="aside">
-                <!--CREDIT CART PAYMENT-->
-                <div class="panel panel-info">
-                    <div class="panel-heading"><span><i class="glyphicon glyphicon-lock"></i></span><h4>Payment Details</h4></div>
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Card Type:</strong></div>
-                            <div class="col-md-12">
-                                <select id="CreditCardType" name="CreditCardType" class="form-control">
-                                        <option value="5">Visa</option>
-                                        <option value="6">MasterCard</option>
-                                        <option value="7">American Express</option>
-                                        <option value="8">Discover</option>
-                                    </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Credit Card Number:</strong></div>
-                            <div class="col-md-12"><input type="text" class="form-control" name="car_number" id="car_number" value="" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Card CVV:</strong></div>
-                            <div class="col-md-12"><input type="text" class="form-control" name="car_code" value="" /></div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <strong>Expiration Date</strong>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" name="">
-                                        <option value="">Month</option>
-                                        <option value="01">01</option>
-                                        <option value="02">02</option>
-                                        <option value="03">03</option>
-                                        <option value="04">04</option>
-                                        <option value="05">05</option>
-                                        <option value="06">06</option>
-                                        <option value="07">07</option>
-                                        <option value="08">08</option>
-                                        <option value="09">09</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" name="">
-                                        <option value="">Year</option>
-                                        <option value="2015">2020</option>
-                                        <option value="2016">2021</option>
-                                        <option value="2017">2022</option>
-                                        <option value="2018">2023</option>
-                                        <option value="2019">2024</option>
-                                        <option value="2020">2025</option>
-                                        <option value="2021">2026</option>
-                                        <option value="2022">2027</option>
-                                        <option value="2023">2028</option>
-                                        <option value="2024">2029</option>
-                                        <option value="2025">2030</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <span>Pay secure using your credit card.</span>
-                            </div>
-                            <div class="col-md-12">
-                                <ul class="cards">
-                                    <li class="visa hand">Visa</li>
-                                    <li class="mastercard hand">MasterCard</li>
-                                    <li class="amex hand">Amex</li>
-                                </ul>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                     
+            <div class="form1">
+
+                <div class="check1">
+                    <div class="check_heading">
+                        <h5>Billing Contact</h5>
                     </div>
-                    <div class="panel-heading">
-                        <h4>Shipping Address</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <div class="col-md-12">
-    
-                            </div>
-                        </div>
-    
-                        <div class="form-group ">
-                            <div class="col-md-6 col-xs-12">
-                                <strong>First Name:</strong>
-                                <input type="text" name="first_name" class="form-control" value="" />
+                    <div class="check_body">
+                        <div class="form-group row">
+                            <div class="col-md-6 col-xs-12 ">First Name
+                                <input type="text" name="first_name" class="form-control" style="height: 30px;" />
                             </div>
                             <div class="span1"></div>
-                            <div class="col-md-6 col-xs-12">
-                                <strong>Last Name:</strong>
-                                <input type="text" name="last_name" class="form-control" value="" />
+                            <div class="col-md-6 col-xs-12 ">
+                                Last Name
+                                <input type="text" name="last_name" class="form-control" style="height: 30px;" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Address Line 1:</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="address" class="form-control" value="" />
+
+                        <div class="form-group row">
+                            <div class="col-md-12">Primary Phone Number
+                                <input type="text" name="phone_number" class="form-control" style="height: 30px;" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Address Line 2:</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="address" class="form-control" value="" />
+
+                        <div class="form-group row">
+                            <div class="col-md-12">Alternate Phone Number
+                                <input type="text" name="phone_number" class="form-control" style="height: 30px;" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>City:</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="city" class="form-control" value="" />
+                        <div class="form-group row">
+                            <div class="col-md-12">Email Address
+                                <input type="text" name="email_address" class="form-control" style="height: 30px;" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Province</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="Province" class="form-control" value="" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Country</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="Country" class="form-control" value="" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12"><strong>Postal Code:</strong></div>
-                            <div class="col-md-12">
-                                <input type="text" name="Postal_code" class="form-control" value="" />
-                            </div>
-                        </div>
-                       
                     </div>
-                </div><!---panel end-->
-            </div><!---aside end-->
-        </div>
-        <hr>
-        <div class="form-group">
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <button type="submit" class="btn btn-primary btn-submit-fix">Pay now</button>
+                    <!--check body end-->
+                </div>
+                <!--check1 ends-->
+
+                <div class="check2">
+                    <div class="check-heading">
+                        <h5>Payment Details</h5>
+                    </div>
+                    <div class="check-body">
+                        <div class="form-group row">
+                            <div class="col-md-12">Card Type</div>
+                            <div class="col-md-12">
+                                <select id="CreditCardType" name="CreditCardType" class="form-control" style="height: 30px;">
+                                    <option value="5">Visa</option>
+                                    <option value="6">MasterCard</option>
+                                    <option value="7">American Express</option>
+                                    <option value="8">PayPal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-9">Credit Card Number
+                                <input type="text" class="form-control" name="card_number" value="" style="height: 30px;" />
+                            </div>
+                            <div class="col-md-3">Card CVV
+                                <input type="text" class="form-control" name="card_code" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">Expiration Date</div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" name="" style="height: 30px;">
+                                            <option value="">Month</option>
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                        </select>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" name="" style="height: 30px;">
+                                            <option value="">Year</option>
+                                            <option value="2015">2020</option>
+                                            <option value="2016">2021</option>
+                                            <option value="2017">2022</option>
+                                            <option value="2018">2023</option>
+                                            <option value="2019">2024</option>
+                                            <option value="2020">2025</option>
+                                            <option value="2021">2026</option>
+                                            <option value="2022">2027</option>
+                                            <option value="2023">2028</option>
+                                            <option value="2024">2029</option>
+                                            <option value="2025">2030</option>
+                                        </select>
+                            </div>
+                        </div>
+                        <div class="form-group row"></div>
+                        <div class="col-md-12 text-right">
+                            <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" alt="Visa">
+                            <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" alt="American Express">
+                            <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" alt="Mastercard">
+                            <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png" alt="PayPal acceptance mark">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <!--check-body ends-->
+                </div>
+                <!--check2 end-->
             </div>
+            <!--form1 ends-->
+
+
+            <div class="form2">
+                <div class="check3">
+                    <div class="check-heading">
+                        <h5>Billing Address</h5>
+                    </div>
+                    <div class="check-body">
+                        <div class="form-group row">
+                            <div class="col-md-6 col-xs-12 ">First Name
+                                <input type="text" name="first_name" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                            <div class="col-md-6 col-xs-12 ">Last Name
+                                <input type="text" name="last_name" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">Address Line 1
+                                <input type="text" name="address" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">Address Line 2
+                                <input type="text" name="address" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">City
+                                <input type="text" name="city" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4 col-xs-12">
+                                <select class="form-control" name="Province" style="height: 30px;">
+                                        <option value="">Province</option>
+                                        <option value="01">AB</option>
+                                        <option value="02">BC</option>
+                                        <option value="03">MB</option>
+                                        <option value="04">NB</option>
+                                        <option value="05">NL</option>
+                                        <option value="06">NS</option>
+                                        <option value="07">ON</option>
+                                        <option value="08">PE</option>
+                                        <option value="09">QC</option>
+                                        <option value="10">SK</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <select class="form-control" name="Province" style="height: 30px;">
+                                        <option value="">Country</option>
+                                        <option value="01">Canada</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--check-body ends-->
+                </div>
+                <!--check3 ends-->
+
+                <div class="check4">
+                    <div class="check-heading">
+                        <h5>Shipping Address</h5>
+                    </div>
+
+                    <div class="check-body">
+                        <div class="form-group row">
+                            <div class="col-md-6 col-xs-12 ">First Name
+                                <input type="text" name="first_name" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                            <div class="span1"></div>
+                            <div class="col-md-6 col-xs-12 ">Last Name
+                                <input type="text" name="last_name" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">Address Line 1
+                                <input type="text" name="address" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">Address Line 2
+                                <input type="text" name="address" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">City
+                                <input type="text" name="city" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4 col-xs-12">
+                                <select class="form-control" name="Province" style="height: 30px;">
+                                        <option value="">Province</option>
+                                        <option value="01">AB</option>
+                                        <option value="02">BC</option>
+                                        <option value="03">MB</option>
+                                        <option value="04">NB</option>
+                                        <option value="05">NL</option>
+                                        <option value="06">NS</option>
+                                        <option value="07">ON</option>
+                                        <option value="08">PE</option>
+                                        <option value="09">QC</option>
+                                        <option value="10">SK</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <select class="form-control" name="Province" style="height: 30px;">
+                                        <option value="">Country</option>
+                                        <option value="01">Canada</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <input type="text" placeholder="Postal code" name="Postal_code" class="form-control" value="" style="height: 30px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--check-body ends-->
+                </div>
+                <!--check4 ends-->
+
+                <div class="pay_now form-group">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <button type="submit" class="btn btn-primary btn-submit-fix">Pay now</button>
+                    </div>
+                </div>
+
+            </div>
+            <!--form2 end-->
         </div>
-        <!--CREDIT CART PAYMENT END-->
-    </div><!---container end-->
+        <!---checkout form ends-->
+    </div>
+    <!---container ends-->
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -344,8 +354,8 @@
             <div class="social-footer">
                 <h5>Follow us</h5>
                 <a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
-                <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a>
 
             </div>
             <!--End of the Third Footer Column-->
@@ -366,6 +376,7 @@
             </div>
 
         </div>
+
         <!-- End of Container Footer -->
 
         <!-- Copyright-->
@@ -374,17 +385,17 @@
                 <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy </a> | <a href="#"> Site Map </a> |<a href="credits.html">Photo Credits</a></p>
         </div>
         <!-- End of Copyright -->
-    </footer>
-    <!-- End of Footer -->
+        </footer>
+        <!-- End of Footer -->
 
-    <script src="js/script.js" async defer></script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                location.reload(true);
+        <script src="js/script.js" async defer></script>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    location.reload(true);
+                });
             });
-        });
-    </script>
+        </script>
 
 </body>
 

@@ -131,7 +131,8 @@ nav {
     font-size: large; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: red; }
 
 .checkout-form {
   display: grid;
@@ -158,6 +159,9 @@ body {
   .form2 {
     display: grid;
     grid-template-columns: 50% 50%; } }
+.jumbotron {
+  background-color: #5a7591; }
+
 .banner {
   padding-left: 0px;
   padding-right: 0px; }

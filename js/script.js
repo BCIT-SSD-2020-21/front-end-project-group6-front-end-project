@@ -13,47 +13,46 @@ var cart = {
 
 //Startup Card load
 loadCartTotCount();
-renderCart();
 
 
 
 //Item addition for Cart page
 //Add Item-1
-$("#add-btn-1").click(function(){
-    // Make it go add to cart when button is clicked
-    $(".hide-item-1").show();
-    $(".hide-hr-1").show();
- });
+// $("#add-btn-1").click(function(){
+//     // Make it go add to cart when button is clicked
+//     $(".hide-item-1").show();
+//     $(".hide-hr-1").show();
+//  });
 
-//Remove Item-2
-$(".add-btn-2").click(function(){
-    $(".hide-item-2").show();
-    $(".hide-hr-2").show();
- });
+// //Remove Item-2
+// $(".add-btn-2").click(function(){
+//     $(".hide-item-2").show();
+//     $(".hide-hr-2").show();
+//  });
 
- //Remove Item-3
-$(".add-btn-3").click(function(){
-    $(".hide-item-3").show();
-    $(".hide-hr-3").show();
- });
+//  //Remove Item-3
+// $(".add-btn-3").click(function(){
+//     $(".hide-item-3").show();
+//     $(".hide-hr-3").show();
+//  });
 
- //Remove Item-4
-$(".add-btn-4").click(function(){
-    $(".hide-item-4").show();
-    $(".hide-hr-4").show();
- });
+//  //Remove Item-4
+// $(".add-btn-4").click(function(){
+//     $(".hide-item-4").show();
+//     $(".hide-hr-4").show();
+//  });
 
-//Remove Item-5
-$(".add-btn-5").click(function(){
-    $(".hide-item-5").show();
-    $(".hide-hr-5").show();
- });
+// //Remove Item-5
+// $(".add-btn-5").click(function(){
+//     $(".hide-item-5").show();
+//     $(".hide-hr-5").show();
+//  });
 
- //Remove Item-6
-$(".add-btn-6").click(function(){
-    $(".hide-item-6").show();
-    $(".hide-hr-6").show();
- });
+//  //Remove Item-6
+// $(".add-btn-6").click(function(){
+//     $(".hide-item-6").show();
+//     $(".hide-hr-6").show();
+//  });
 
 
 
@@ -151,22 +150,22 @@ $("#rm-btn-6").click(function(){
 //Addition Item function
 function addtoCart(addButtonRef){
     if(addButtonRef.id == "add-btn-1"){
-    cart.item1 = "Test" 
+        //cart.item1 = "Test" 
     }
     else if(addButtonRef.id == "add-btn-2"){
-        cart.item2 = "Test"      
+        //cart.item2 = "Test"      
     }
     else if(addButtonRef.id == "add-btn-3"){
-        cart.item3 = "Test" 
+        //cart.item3 = "Test" 
     }
     else if(addButtonRef.id == "add-btn-4"){
-        cart.item4 = "Test"
+        //cart.item4 = "Test"
     }
     else if(addButtonRef.id == "add-btn-5"){
-        cart.item5 = "Test"
+        //cart.item5 = "Test"
     }
     else if(addButtonRef.id == "add-btn-6"){
-        cart.item6 = ""
+        //cart.item6 = ""
     }  
     else{}    
     cartCount();
@@ -220,12 +219,6 @@ let cartTotCount = localStorage.getItem('cartCount');
     if (cartTotCount){
      $("#cart-icon-count").text(cartTotCount);
     }
-}
-
-function renderCart() {
-
-    
-
 }
 
 

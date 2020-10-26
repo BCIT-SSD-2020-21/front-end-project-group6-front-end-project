@@ -3,6 +3,13 @@ var itemPrices = []
 var shippingFee = "Free"
 
 function sum(itemPrices) {
+
+
+    // let bookSelected = localStorage.getItem('bookSelected');
+    // bookSelected = JSON.parse(bookSelected);
+
+    console.log(bookSelected);
+
     if (toString.call(itemPrices) !== "[object Array]")
         return false;
 

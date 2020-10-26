@@ -2,14 +2,55 @@
 
 //Actual Cart
 
-var cart = {
-    item1: "",
-    item2: "",
-    item3: "",
-    item4: "",
-    item5: "",
-    item6: ""
-};
+// var cart = {
+//     item1: "",
+//     item2: "",
+//     item3: "",
+//     item4: "",
+//     item5: "",
+//     item6: ""
+// };
+
+var books = [
+    {
+        url: '',
+        title: 'Coding for Beginners',
+        price: '$25',
+        isSelected: 0
+    },
+    {
+        url: '',
+        title: 'Javascript for Beginners',
+        price: '$30',
+        isSelected: 0
+    },
+    {
+        url: '',
+        title: 'SQL Programming For Beginners',
+        price: '$25',
+        isSelected: 0
+    },
+    {
+        url: '',
+        title: 'Database Management System',
+        price: '$25',
+        isSelected: 0
+    },
+    {
+        url: '',
+        title: 'SQL Database Programming',
+        price: '$30',
+        isSelected: 0
+    },
+    {
+        url: '',
+        title: 'Essential of Web Database Development',
+        price: '$25',
+        isSelected: 0
+    }
+]
+
+
 
 //Startup Card load
 loadCartTotCount();
@@ -61,6 +102,7 @@ loadCartTotCount();
 //Add Item-1
 $("#add-btn-1").click(function(){
     addtoCart(this);
+    
  });
 
  //Add Item-2
@@ -144,32 +186,45 @@ $("#rm-btn-6").click(function(){
         cart.item6 = "Hello"
     }  
     else{}    
-    renderCart();
+    //renderCart();
  }
 
 //Addition Item function
 function addtoCart(addButtonRef){
+    let i;
     if(addButtonRef.id == "add-btn-1"){
-        //cart.item1 = "Test" 
+        //cart.item1 = "Test"
+        //renderCart(products[0]); 
+        i = 0;
     }
     else if(addButtonRef.id == "add-btn-2"){
-        //cart.item2 = "Test"      
+        //cart.item2 = "Test"
+       // renderCart(products[1]); 
+       i = 1;     
     }
     else if(addButtonRef.id == "add-btn-3"){
         //cart.item3 = "Test" 
+       // renderCart(products[2]);
+       i = 2;
     }
     else if(addButtonRef.id == "add-btn-4"){
         //cart.item4 = "Test"
+       // renderCart(products[3]);
+       i = 3;
     }
     else if(addButtonRef.id == "add-btn-5"){
         //cart.item5 = "Test"
+        //renderCart(products[4]);
+        i = 4;
     }
     else if(addButtonRef.id == "add-btn-6"){
         //cart.item6 = ""
+        //renderCart(products[5]);
+        i = 5;
     }  
     else{}    
-    cartCount();
-    renderCart();
+    cartCount(books[i]);
+    //renderCart();
  }
 
 //   function renderCart(remButtonRef){
@@ -191,8 +246,9 @@ function addtoCart(addButtonRef){
 
 //Cart item counting
 
-function cartCount() {
-
+function cartCount(books) {
+    //Test if output can be read
+    //console.log("the product is ", books)
     //Set the var cartTotCount to existing local storage
     let cartTotCount = localStorage.getItem('cartCount');
 
@@ -203,13 +259,14 @@ function cartCount() {
     if (cartTotCount){
         localStorage.setItem('cartCount', cartTotCount + 1);
         $("#cart-icon-count").text(cartTotCount + 1);
-         //document.querySelector('#cart-icon-count').textContent = cartTotCount + 1;
     }
     else{
         localStorage.setItem('cartCount', 1);
         $("#cart-icon-count").text(1);
-        //document.querySelector('#cart-icon-count').textContent = 1;
     }
+
+bookSelect(books);
+
 }
 
 //Function to load cart initially
@@ -221,4 +278,65 @@ let cartTotCount = localStorage.getItem('cartCount');
     }
 }
 
+function bookSelect(books) {
 
+    //console.log("The book selected is", books)
+
+    //Make a variable and set it to any existing items from local storage
+    let bookSelected = localStorage.getItem('bookSelected');
+    bookSelected = JSON.parse(bookSelected);
+
+    //Put the variable in a suitable format for display
+
+
+    //If books have been selected
+    if(bookSelected != null){
+        //When selecting for the first time it will be undefined
+        //when its undefined you want to take the old book
+        //and add the new
+        if (bookSelected[books.title] == undefined){
+            bookSelected = {
+             ...bookSelected,
+             [books.title]: books
+            }
+        }
+        else{
+            bookSelected = {
+                ...bookSelected,
+                [books.title]: books
+               }
+            bookSelected.isSelected = bookSelected.isSelected + 1;
+
+        }
+           bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
+             //books.isSelected = books.isSelected + 1;
+            // bookSelected = {
+            //     ["Title"]: books.title,
+            //     ["Price"]: books.price,
+            //     ["URL"]: books.url,
+            //     ["Quantity"]: books.isSelected
+          //  }
+            //  ["Title"]: books.title,
+            //  ["Price"]: books.price,
+            //  ["URL"]: books.url,
+            //  ["Quantity"]: books.isSelected
+    }
+    else
+    {
+        books.isSelected = 1;
+        bookSelected = {
+            [books.title]: books}
+        // bookSelected = {
+        //     ["Title"]: books.title,
+        //     ["Price"]: books.price,
+        //     ["URL"]: books.url,
+        //     ["Quantity"]: books.isSelected
+        // }
+    }
+
+
+
+
+
+    localStorage.setItem('bookSelected', JSON.stringify(bookSelected));
+}

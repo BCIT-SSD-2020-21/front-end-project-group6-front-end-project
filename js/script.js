@@ -13,6 +13,7 @@ var cart = {
 
 //Startup Card load
 loadCartTotCount();
+renderCart();
 
 
 
@@ -172,14 +173,14 @@ function addtoCart(addButtonRef){
     renderCart();
  }
 
-  function renderCart(remButtonRef){
-    document.getElementById("cart1").value = cart.item1;
-    document.getElementById("cart2").value = cart.item2;
-    document.getElementById("cart3").value = cart.item3;
-    document.getElementById("cart4").value = cart.item4;
-    document.getElementById("cart5").value = cart.item5;
-    document.getElementById("cart6").value = cart.item6;
-  }
+//   function renderCart(remButtonRef){
+//     document.getElementById("cart1").value = cart.item1;
+//     document.getElementById("cart2").value = cart.item2;
+//     document.getElementById("cart3").value = cart.item3;
+//     document.getElementById("cart4").value = cart.item4;
+//     document.getElementById("cart5").value = cart.item5;
+//     document.getElementById("cart6").value = cart.item6;
+//   }
 
 //Remove expected shipping delivery date
 //When items are all hidden
@@ -219,6 +220,12 @@ let cartTotCount = localStorage.getItem('cartCount');
     if (cartTotCount){
      $("#cart-icon-count").text(cartTotCount);
     }
+}
+
+function renderCart() {
+
+    
+
 }
 
 

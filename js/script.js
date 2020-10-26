@@ -11,6 +11,10 @@ var cart = {
     item6: ""
 };
 
+//Startup Card load
+loadCartTotCount();
+
+
 
 //Item addition for Cart page
 //Add Item-1
@@ -190,7 +194,7 @@ function addtoCart(addButtonRef){
 function cartCount() {
 
     //Set the var cartTotCount to existing local storage
-    var cartTotCount = localStorage.getItem('cartCount');
+    let cartTotCount = localStorage.getItem('cartCount');
 
     //converts cartTotCount string to Int
     cartTotCount = parseInt(cartTotCount);
@@ -198,13 +202,23 @@ function cartCount() {
     //If cart has been pressed, increase local storage for cartCount
     if (cartTotCount){
         localStorage.setItem('cartCount', cartTotCount + 1);
-        //document.querySelector('.cart-icon span').textContent = cartTotCount + 1;
         $("#cart-icon-count").text(cartTotCount + 1);
+         //document.querySelector('#cart-icon-count').textContent = cartTotCount + 1;
     }
     else{
         localStorage.setItem('cartCount', 1);
-        $("#cart-icon-count").text(cartTotCount + 1);
+        $("#cart-icon-count").text(1);
+        //document.querySelector('#cart-icon-count').textContent = 1;
     }
-
-
 }
+
+//Function to load cart initially
+function loadCartTotCount() {
+let cartTotCount = localStorage.getItem('cartCount');
+    //Set cart count on startup
+    if (cartTotCount){
+     $("#cart-icon-count").text(cartTotCount);
+    }
+}
+
+

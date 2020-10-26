@@ -28,7 +28,7 @@
           </button>
             <div class="collapse navbar-collapse " id="navbarResponsive ">
                 <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item active ">
+                    <li class="nav-item ">
                         <a class="nav-link " href="index.html ">Home
                   <span class="sr-only ">(current)</span>
                 </a>
@@ -42,7 +42,7 @@
                     <li class="nav-item ">
                         <a class="nav-link " href="contact-us.html ">Contact Us</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item active">
                         <a class="nav-link " href="registration.html ">
                             <i class="fa fa-user-circle " style="font-size: 32px "></i>
                         </a>
@@ -50,12 +50,13 @@
                     <li class="nav-item ">
                         <a class="nav-link " href="cart.html ">
                             <i class="fa fa-shopping-cart " style="font-size: 32px "></i
-                ></a>
+                ><span id="cart-icon-count">0</span></a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <!--Container for Registration & Log In-->
     <div class="container row ml-auto mr-auto">
@@ -67,20 +68,20 @@
 
         <!--Register form-->
         <!---------------------------------------------------------------------------------------------->
-        <div class="col-md-6 col-sm-12 ">
-            <h2 class="font-weight-bold ">Register</h2>
+        <div class="col-lg-6 col-sm-12 ">
+            <h3 class="font-weight-bold " style="padding-top: 30px;">Register</h3>
 
-            <form class="p-top-2 " action=" " name="registration ">
+            <form class="p-top-2 " action=" " name="registration " style="padding:20px">
                 <div class="form-group row ">
-                    <label for="inputFirstName " class="col-md-4 col-sm-12 col-form-label ">First Name</label>
+                    <label for="inputFirstName " class="col-md-4 col-sm-4 col-form-label ">First Name</label>
                     <div class="col-sm-8 ">
                         <input type="text " class="form-control " id="inputFirstName " placeholder="Enter your First Name " />
                     </div>
                 </div>
                 <div class="form-group row ">
-                    <label for="inputLastName " class="col-sm-2 col-form-label ">Last Name</label
+                    <label for="inputLastName " class="col-sm-4 col-form-label ">Last Name</label
             >
-            <div class="col-sm-10 ">
+            <div class="col-sm-8 ">
               <input
                 type="text "
                 class="form-control "
@@ -90,10 +91,10 @@
             </div>
           </div>
           <div class="form-group row ">
-            <label for="inputEmail " class="col-sm-2 col-form-label "
+            <label for="inputEmail " class="col-sm-4 col-form-label "
               >Email</label
             >
-            <div class="col-sm-10 ">
+            <div class="col-sm-8 ">
               <input
                 type="email "
                 class="form-control "
@@ -103,10 +104,10 @@
             </div>
           </div>
           <div class="form-group row ">
-            <label for="inputUser " class="col-sm-2 col-form-label "
+            <label for="inputUser " class="col-sm-4 col-form-label "
               >Username</label
             >
-            <div class="col-sm-10 ">
+            <div class="col-sm-8 ">
               <input
                 type="password "
                 class="form-control "
@@ -116,10 +117,10 @@
             </div>
           </div>
           <div class="form-group row ">
-            <label for="inputPassword " class="col-sm-2 col-form-label "
+            <label for="inputPassword " class="col-sm-4 col-form-label "
               >Password</label
             >
-            <div class="col-sm-10 ">
+            <div class="col-sm-8 ">
               <input
                 type="password "
                 class="form-control "
@@ -129,10 +130,10 @@
             </div>
           </div>
           <div class="form-group row ">
-            <label for="inputConfirmPassword " class="col-sm-2 col-form-label "
+            <label for="inputConfirmPassword " class="col-sm-4 col-form-label "
               >Password</label
             >
-            <div class="col-sm-10 ">
+            <div class="col-sm-8 ">
               <input
                 type="password "
                 class="form-control "
@@ -154,16 +155,15 @@
       <!---------------------------------------------------------------------------------------------->
 
       <div
-        class="aside col-md-6 col-sm-12 py-5 "
-      >
+        class="aside col-lg-6 col-sm-12 py-5 ">
         <div class = "login-form py-5 ">
-          <h2 class="font-weight-bold ">Log In</h2>
-          <form>
+          <h3 class="font-weight-bold " style="padding-top: 30px;">Log In</h3>
+          <form style="padding:20px">
             <div class="form-group row ">
-              <label for="inputUser " class="col-sm-2 col-form-label "
+              <label for="inputUser " class="col-sm-4 col-form-label "
                 >Username</label
               >
-              <div class="col-sm-10 ">
+              <div class="col-sm-8 ">
                 <input
                   type="text "
                   class="form-control "
@@ -173,10 +173,10 @@
               </div>
             </div>
             <div class="form-group row ">
-              <label for="inputPassword " class="col-sm-2 col-form-label "
+              <label for="inputPassword " class="col-sm-4 col-form-label "
                 >Password</label
               >
-              <div class="col-sm-10 ">
+              <div class="col-sm-8 ">
                 <input
                   type="password "
                   class="form-control "
@@ -221,18 +221,15 @@
         </div>
         <!--End of the Second Footer Column-->
 
-        <div class="social-footer ">
+        <div class="social-footer">
           <h5>Follow us</h5>
-          <a href="# "
-            ><i class="fa fa-facebook-square " style="font-size: 30px "></i
-          ></a>
-          <a href="# "
-            ><i class="fa fa-linkedin-square " style="font-size: 30px "></i
-          ></a>
-          <a href="# "
-            ><i class="fa fa-twitter-square " style="font-size: 30px "></i
-          ></a>
-        </div>
+          <ul>
+          <li><a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a></li>
+                 <li> <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a></li>
+              </ul>
+
+      </div>
         <!--End of the Third Footer Column-->
 
         <div class="contact-us-footer ">

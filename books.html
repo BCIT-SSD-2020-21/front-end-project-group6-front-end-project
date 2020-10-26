@@ -86,7 +86,7 @@
 
       <!-- Search Bar for Books -->
       <div class="search-bar">
-        <form class="form-inline" style="justify-content: center;">
+        <form class="form-inline" style="justify-content: center; background-color: #d8dce4">
           <div>
             <h5 style="padding-top: 5px;">Search Books</h5>
           </div>
@@ -109,23 +109,22 @@
       <br />
 
       <div class="row">
-        <aside class="col-md-4 book-sidebar text-white bg-info rounded">
-          <h3 class="text-center">Select Sections</h3>
-          <form id="search-form">
-            <div class="form-group">
+        <aside class="col-md-4 book-sidebar text-white rounded" style="background-color: #5a7591;">
+          <h3 class="text-center" style="margin-top: 10px;">Select Sections</h3>
+  
+            <div style="width: 80%; padding-left: 20%; margin-top: 20px;">
               <select
                 id="dropdown"
                 name="selection"
                 class="form-control"
-                required
-              >
+                required>
                 <option disabled selected value>Select Your Option</option>
                 <option value="for_beginners">For Beginners</option>
                 <option value="database_essentials">Database Essentials</option>
               </select>
             </div>
-          </form>
-          <div class="p-4 mb-3">
+          
+          <div class="p-4 mb-3 mt-3">
             <h4>For Beginners</h4>
             <p class="mb-0"
               >Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras

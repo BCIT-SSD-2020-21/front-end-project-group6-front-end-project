@@ -123,11 +123,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: red; }
-
-.jumbotron {
-  background-color: #5a7591; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 nav {
   background-color: #5a7591; }
@@ -157,7 +153,8 @@ form {
   text-align: center; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  padding-top: 30px; }
 
 .login-form {
   display: grid;

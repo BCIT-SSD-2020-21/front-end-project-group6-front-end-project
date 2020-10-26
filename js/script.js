@@ -3,37 +3,37 @@
 //Actual Cart
 var books = [
     {
-        url: '',
+        url: 'images/Coding_for_Beginners.jpg',
         title: 'Coding for Beginners',
         price: '$25',
         isSelected: 0
     },
     {
-        url: '',
+        url: 'images/Javascript_for_Beginners.jpg',
         title: 'Javascript for Beginners',
         price: '$30',
         isSelected: 0
     },
     {
-        url: '',
+        url: 'images/SQL_Programming_For_Beginners.png',
         title: 'SQL Programming For Beginners',
         price: '$25',
         isSelected: 0
     },
     {
-        url: '',
+        url: 'images/Database_Management_System.jpg',
         title: 'Database Management System',
         price: '$25',
         isSelected: 0
     },
     {
-        url: '',
+        url: 'images/Sql_Database_Programming.jpg',
         title: 'SQL Database Programming',
         price: '$30',
         isSelected: 0
     },
     {
-        url: '',
+        url: 'images/Essentials_of_Web_Database_Development.png',
         title: 'Essential of Web Database Development',
         price: '$25',
         isSelected: 0
@@ -44,6 +44,7 @@ var books = [
 
 //Startup Card Count
 loadCartTotCount();
+InitCartPage();
 
 
 
@@ -323,10 +324,84 @@ function bookSelect(books) {
         //     ["Quantity"]: books.isSelected
         // }
     }
-
-
-
-
-
     localStorage.setItem('bookSelected', JSON.stringify(bookSelected));
+}
+
+function InitCartPage() {
+    let booksInCart = localStorage.getItem("bookSelected");
+    //let book1 = $(".cart-container");
+    let book1 = document.querySelector(".cart-container")
+    booksInCart = JSON.parse(booksInCart)
+    console.log(book1, booksInCart,booksInCart.url);
+
+    //book1.append("<div class="test"><span class="title">Hello World</span></div>");
+
+    
+
+    if(booksInCart){
+
+        book1.innerHTML = '';
+        Object.values(booksInCart).map(item => {
+        
+            book1.innerHTML +=
+        ` <!-- Cart Item 1 -->
+        <div class="mt-3">
+            <div class="pt-4 wish-list">
+                <div class="row mb-4 hide-item-1">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                        <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                            <img class="img-fluid w-100" src="${item.url}" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h5 id="Book1Title">${item.title}</h5>
+                                    <p class="mb-3 text-muted text-uppercase small">Front End - Book</p>
+                                    <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                </div>
+                                <div>
+                                    <div class="def-number-input number-input md-0 w-100">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
+                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
+                                    </div>
+                                    <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                    (Note, 1 Book)
+                  </small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a href="#!" type="button" id="rm-btn-1" class="btn btn-danger card-link-secondary small text-uppercase mr-3"><i
+                      class="fas fa-trash-alt mr-1"></i> Remove item </a>
+            <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
+                      class="fas fa-heart mr-1"></i> Move to wish list </a>
+</div>
+<p class="mb-0"><span><strong id="summary">${item.price}</strong></span></p class="mb-0">
+</div>
+</div>
+</div>
+</div>  
+        `
+        })
+
+    }        
+
+
+    // $("#Book1Title").html(booksInCart.title);
+    //console.log(booksInCart)
+    // Object.values(booksInCart).map(item => {
+    //     book1.innerHtml += `
+    // <div class="test"><span class="title">Hello World</span></div>
+    // `
+    // $(".cart-container").html("Hello <b>world</b>!"
+    // );
+    // $("#Book1Title").html("Hello <b>world</b>!");  
+    // <span>${item.price}</span>  
+  //  }
+  //  )
+
 }

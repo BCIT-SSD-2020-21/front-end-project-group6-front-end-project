@@ -9,14 +9,10 @@ form {
     background-color: $light-color;
 }
 
-.form-button {
+.form-button, h3 {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-    padding-top: 30px;
-}
 
 .login-form {
     display: grid;
@@ -25,10 +21,7 @@ h2 {
 
 //checkout page 
 
-.checkout-form {
-    display: grid;
-    grid-template-rows: 5% 40% 45% 10%;
-}
+
 
 .check1,
 .check2,
@@ -39,13 +32,22 @@ h2 {
 
 .Billing_header {
     border-bottom: 1px solid black;
+    align-self: center;
 }
+
 
 .pay_now {
     border-top: 1px solid black;
 }
 
 @media screen and (min-width:$tabletLandscape) {
+
+    .checkout-form {
+        display: grid;
+        grid-template-rows: 5% 35% 40% 20%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
     .form1 {
         display: grid;
         grid-template-columns: 50% 50%;

@@ -29,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                   </a>
@@ -63,21 +63,27 @@
     <div class="container">
 
         <!-- Banner -->
-      2
 
         <div class="search-bar">
-            <form class="form-inline">
-                <div>
-                    <h5>Search Books</h5>
+            <form class="form-inline" style="justify-content: center; background-color: #d8dce4">
+              <div>
+                <h5 style="padding-top: 5px;">Search Books</h5>
+              </div>
+              <div class="input-group" style="padding-left: 10px;">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                />
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Go!</span>
                 </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Go!</span>
-                    </div>
-                </div>
+              </div>
             </form>
-        </div>
+          </div>
+
 
         <div class="photo-credits">
             <!--Photo Reference for Home Page -->
@@ -139,9 +145,11 @@
 
             <div class="social-footer">
                 <h5>Follow us</h5>
-                <a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
-                        <a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
-                        <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a>
+                <ul>
+                <li><a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a></li>
+                       <li> <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a></li>
+                    </ul>
 
             </div>
             <!--End of the Third Footer Column-->

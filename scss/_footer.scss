@@ -6,11 +6,19 @@ footer {
 
     .about-footer ul, .cart-footer ul, h5, .social-footer ul, .contact-us-footer ul{
         text-align: center;
+<<<<<<< HEAD
+=======
+    }
+    
+    .about-footer li, .cart-footer li, .contact li, .social-footer li{
+     display: inline;
+>>>>>>> main
     }
     
     .about-footer li, .cart-footer li, .contact li, .social-footer li{
      display: inline;
     }
+
 
 
     a{
@@ -22,6 +30,13 @@ footer {
     .map{
         text-align: center;   
     }
+<<<<<<< HEAD
+=======
+
+    .copyright{
+        margin-top: 10px;
+    }
+>>>>>>> main
    
 }
 

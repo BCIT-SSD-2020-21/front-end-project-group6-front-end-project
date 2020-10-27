@@ -1,83 +1,130 @@
 //Cart JS Script
+let carts = document.querySelectorAll('.bookcart');
 
 //Actual Cart
-var books = [
-    {
+var books = [{
         url: 'images/Coding_for_Beginners.jpg',
         title: 'Coding for Beginners',
-        price: '$25',
+        price: 25,
         isSelected: 0
     },
     {
         url: 'images/Javascript_for_Beginners.jpg',
         title: 'Javascript for Beginners',
-        price: '$30',
+        price: 30,
         isSelected: 0
     },
     {
         url: 'images/SQL_Programming_For_Beginners.png',
         title: 'SQL Programming For Beginners',
-        price: '$25',
+        price: 25,
         isSelected: 0
     },
     {
         url: 'images/Database_Management_System.jpg',
         title: 'Database Management System',
-        price: '$25',
+        price: 25,
         isSelected: 0
     },
     {
         url: 'images/Sql_Database_Programming.jpg',
         title: 'SQL Database Programming',
-        price: '$30',
+        price: 30,
         isSelected: 0
     },
     {
         url: 'images/Essentials_of_Web_Database_Development.png',
         title: 'Essential of Web Database Development',
-        price: '$25',
+        price: 25,
         isSelected: 0
     }
 ]
 
+
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cartCount(books[i]);
+        totalBookCost(books[i]);
+    })
+}
 
 
 //Startup Card Count
 loadCartTotCount();
 InitCartPage();
 
+//Item addition for Cart page
+//Add Item-1
+// $("#add-btn-1").click(function(){
+//     // Make it go add to cart when button is clicked
+//     $(".hide-item-1").show();
+//     $(".hide-hr-1").show();
+//  });
+
+// //Remove Item-2
+// $(".add-btn-2").click(function(){
+//     $(".hide-item-2").show();
+//     $(".hide-hr-2").show();
+//  });
+
+//  //Remove Item-3
+// $(".add-btn-3").click(function(){
+//     $(".hide-item-3").show();
+//     $(".hide-hr-3").show();
+//  });
+
+//  //Remove Item-4
+// $(".add-btn-4").click(function(){
+//     $(".hide-item-4").show();
+//     $(".hide-hr-4").show();
+//  });
+
+// //Remove Item-5
+// $(".add-btn-5").click(function(){
+//     $(".hide-item-5").show();
+//     $(".hide-hr-5").show();
+//  });
+
+//  //Remove Item-6
+// $(".add-btn-6").click(function(){
+//     $(".hide-item-6").show();
+//     $(".hide-hr-6").show();
+//  });
+
+
 
 //Addition Buttons on Books
 
 //Add Item-1
-$("#add-btn-1").click(function(){
+$("#add-btn-1").click(function() {
     addtoCart(this);
- });
 
- //Add Item-2
-$("#add-btn-2").click(function(){
-    addtoCart(this);
- });
+});
 
- //Add Item-3
-$("#add-btn-3").click(function(){
+//Add Item-2
+$("#add-btn-2").click(function() {
     addtoCart(this);
- });
+});
+
+//Add Item-3
+$("#add-btn-3").click(function() {
+    addtoCart(this);
+});
 
 //Add Item-4
-$("#add-btn-4").click(function(){
+$("#add-btn-4").click(function() {
     addtoCart(this);
- });
+});
 
- //Add Item-5
-$("#add-btn-5").click(function(){
+//Add Item-5
+$("#add-btn-5").click(function() {
     addtoCart(this);
- });
+});
 
- //Add Item-6
-$("#add-btn-6").click(function(){
+//Add Item-6
+$("#add-btn-6").click(function() {
     addtoCart(this);
- });
+});
 
 
 
@@ -139,42 +186,36 @@ $("#add-btn-6").click(function(){
 //  }
 
 //Addition Item function
-function addtoCart(addButtonRef){
+function addtoCart(addButtonRef) {
     let i;
-    if(addButtonRef.id == "add-btn-1"){
+    if (addButtonRef.id == "add-btn-1") {
         //cart.item1 = "Test"
         //renderCart(products[0]); 
         i = 0;
-    }
-    else if(addButtonRef.id == "add-btn-2"){
+    } else if (addButtonRef.id == "add-btn-2") {
         //cart.item2 = "Test"
-       // renderCart(products[1]); 
-       i = 1;     
-    }
-    else if(addButtonRef.id == "add-btn-3"){
+        // renderCart(products[1]); 
+        i = 1;
+    } else if (addButtonRef.id == "add-btn-3") {
         //cart.item3 = "Test" 
-       // renderCart(products[2]);
-       i = 2;
-    }
-    else if(addButtonRef.id == "add-btn-4"){
+        // renderCart(products[2]);
+        i = 2;
+    } else if (addButtonRef.id == "add-btn-4") {
         //cart.item4 = "Test"
-       // renderCart(products[3]);
-       i = 3;
-    }
-    else if(addButtonRef.id == "add-btn-5"){
+        // renderCart(products[3]);
+        i = 3;
+    } else if (addButtonRef.id == "add-btn-5") {
         //cart.item5 = "Test"
         //renderCart(products[4]);
         i = 4;
-    }
-    else if(addButtonRef.id == "add-btn-6"){
+    } else if (addButtonRef.id == "add-btn-6") {
         //cart.item6 = ""
         //renderCart(products[5]);
         i = 5;
-    }  
-    else{}    
+    } else {}
     cartCount(books[i]);
     //renderCart();
- }
+}
 
 
 //Cart item counting
@@ -189,25 +230,24 @@ function cartCount(books) {
     cartTotCount = parseInt(cartTotCount);
 
     //If cart has been pressed, increase local storage for cartCount
-    if (cartTotCount){
+    if (cartTotCount) {
         localStorage.setItem('cartCount', cartTotCount + 1);
         $("#cart-icon-count").text(cartTotCount + 1);
-    }
-    else{
+    } else {
         localStorage.setItem('cartCount', 1);
         $("#cart-icon-count").text(1);
     }
 
-bookSelect(books);
+    bookSelect(books);
 
 }
 
 //Function to load cart initially
 function loadCartTotCount() {
-let cartTotCount = localStorage.getItem('cartCount');
+    let cartTotCount = localStorage.getItem('cartCount');
     //Set cart count on startup
-    if (cartTotCount){
-     $("#cart-icon-count").text(cartTotCount);
+    if (cartTotCount) {
+        $("#cart-icon-count").text(cartTotCount);
     }
 }
 
@@ -223,21 +263,20 @@ function bookSelect(books) {
 
 
     //If books have been selected
-    if(bookSelected != null){
+    if (bookSelected != null) {
         //When selecting for the first time it will be undefined
         //when its undefined you want to take the old book
         //and add the new
-        if (bookSelected[books.title] == undefined){
-            bookSelected = {
-             ...bookSelected,
-             [books.title]: books
-            }
-        }
-        else{
+        if (bookSelected[books.title] == undefined) {
             bookSelected = {
                 ...bookSelected,
                 [books.title]: books
-               }
+            }
+        } else {
+            bookSelected = {
+                ...bookSelected,
+                [books.title]: books
+            }
             bookSelected.isSelected = bookSelected.isSelected + 1;
 
         }
@@ -254,29 +293,34 @@ function bookSelect(books) {
 
 function InitCartPage() {
     let booksInCart = localStorage.getItem("bookSelected");
+    let booksTotal = localStorage.getItem("totalBookCost");
     //let book1 = $(".cart-container");
     let book1 = document.querySelector(".cart-container")
     booksInCart = JSON.parse(booksInCart)
-    //console.log(book1, booksInCart,booksInCart);
+    booksTotal = JSON.parse(booksTotal)
+    //console.log(book1, booksInCart, booksInCart.url);
 
     //book1.append("<div class="test"><span class="title">Hello World</span></div>");
 
-    
 
-    if(booksInCart){
+    if (booksTotal) {
+        $("#book-Total").text("$" + booksTotal);
+    }
+
+
+    if (booksInCart) {
 
         book1.innerHTML = '';
         Object.values(booksInCart).map(item => {
-        
+
             book1.innerHTML +=
-        ` <!-- Cart Item 1 -->
+                ` <!-- Cart Item 1 -->
         <div class="mt-3">
             <div class="pt-4 wish-list">
                 <div class="row mb-4 hide-item-1">
                     <div class="col-md-5 col-lg-3 col-xl-3">
                         <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
                             <img class="img-fluid w-100" src="${item.url}" alt="">
-
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-9 col-xl-9">
@@ -285,7 +329,7 @@ function InitCartPage() {
                                 <div>
                                     <h5 id="Book1Title">${item.title}</h5>
                                     <p class="mb-3 text-muted text-uppercase small">Front End - Book</p>
-                                    <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                    <p class="mb-2 text-muted text-uppercase small">Quantity: ${item.isSelected}</p>
                                 </div>
                                 <div>
                                     <div class="def-number-input number-input md-0 w-100">
@@ -305,45 +349,31 @@ function InitCartPage() {
             <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
                       class="fas fa-heart mr-1"></i> Move to wish list </a>
 </div>
-<p class="mb-0"><span><strong id="summary">${item.price}</strong></span></p class="mb-0">
+<p class="mb-0"><span><strong id="summary">$${item.price}.00</strong></span></p class="mb-0">
 </div>
 </div>
 </div>
 </div>  
         `
-        })
-        book1.innerHTML += `<h3>            <!-- Card -->
-        <div class="mt-5">
-            <div class="pt-4">
+        })  
+    }
 
-                <h5 class="mb-3">The total amount of</h5>
+}
 
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                        Temporary amount
-                        <span>$50.00</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                        Shipping
-                        <span>$5.00</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                        <div>
-                            <strong>The total amount of</strong>
-                            <strong>
-                        <p class="mb-0">(including VAT)</p>
-                      </strong>
-                        </div>
-                        <span><strong>$58.98</strong></span>
-                    </li>
-                </ul>
+function totalBookCost(books) {
 
-                <a href="check-out.html" style="text-decoration: none;"><button type="button"  class="btn btn-primary btn-block">go to checkout</button></a>
+    //console.log("The cost is ", books.price);
 
+    let cartCost = localStorage.getItem('totalBookCost');
 
-            </div>
-        </div>
-        <!-- Card -->`
-    }        
+    console.log("My cartCost is", cartCost);
+
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+
+        localStorage.setItem("totalBookCost", cartCost + books.price);
+    } else {
+        localStorage.setItem("totalBookCost", books.price);
+    }
 
 }

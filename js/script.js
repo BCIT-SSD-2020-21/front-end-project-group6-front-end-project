@@ -386,6 +386,8 @@ function InitCartPage() {
 </div>
 </div>  
         `
+        book1.innerHTML += `<span>totalBookCost</span> `
+
         })
 
     }        

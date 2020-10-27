@@ -319,6 +319,7 @@ function bookSelect(books) {
 
 function InitCartPage() {
     let booksInCart = localStorage.getItem("bookSelected");
+
     //let book1 = $(".cart-container");
     let book1 = document.querySelector(".cart-container")
     booksInCart = JSON.parse(booksInCart)
@@ -326,23 +327,7 @@ function InitCartPage() {
 
     //book1.append("<div class="test"><span class="title">Hello World</span></div>");
 
-    function totalBookCost(books) {
 
-        //console.log("The cost is ", books.price);
-
-        let cartCost = localStorage.getItem('totalBookCost');
-
-        console.log("My cartCost is", cartCost);
-
-        if (cartCost != null) {
-            cartCost = parseInt(cartCost);
-
-            localStorage.setItem("totalBookCost", cartCost + books.price);
-        } else {
-            localStorage.setItem("totalBookCost", books.price);
-        }
-
-    }
 
     if (booksInCart) {
 
@@ -409,5 +394,23 @@ function InitCartPage() {
     // <span>${item.price}</span>  
     //  }
     //  )
+
+}
+
+function totalBookCost(books) {
+
+    //console.log("The cost is ", books.price);
+
+    let cartCost = localStorage.getItem('totalBookCost');
+
+    console.log("My cartCost is", cartCost);
+
+    if (cartCost != null) {
+        cartCost = parseInt(cartCost);
+
+        localStorage.setItem("totalBookCost", cartCost + books.price);
+    } else {
+        localStorage.setItem("totalBookCost", books.price);
+    }
 
 }

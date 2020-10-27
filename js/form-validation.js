@@ -1,4 +1,4 @@
-// Wait for the DOM to be ready
+// Create function to validate registration form.
 $(function() {
     // Initialize form validation on the registration form.
     // It has the name attribute "registration"
@@ -44,17 +44,13 @@ $(function() {
         email: "Please enter a valid email address"
         
       },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-      submitHandler: function(form) {
-        form.submit();
-      }
     });
   });
 
+
+  // Create Function to validate sign-in form
+
 $(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
   $("form[name='login']").validate({
     // Specify validation rules
     rules: {
@@ -85,3 +81,6 @@ $(function() {
     }
   });
 });
+
+// Create function to validation check out form
+

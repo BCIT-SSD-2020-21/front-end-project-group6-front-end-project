@@ -341,7 +341,7 @@ function InitCartPage() {
     if(booksInCart){
 
         book1.innerHTML = '';
-        Object.values(booksInCart).map(item => {
+        Object.values(booksInCart[0]).map(item => {
         
             book1.innerHTML +=
         ` <!-- Cart Item 1 -->

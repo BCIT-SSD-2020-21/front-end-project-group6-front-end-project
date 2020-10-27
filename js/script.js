@@ -385,11 +385,14 @@ function InitCartPage() {
 </div>
 </div>
 </div>  
-        `
+        `       
         })
 
-    }        
+        // book1.innerHTML += 
+        // `The total cost is ${totalBookCost}`
 
+
+    }        
 
     // $("#Book1Title").html(booksInCart.title);
     //console.log(booksInCart)

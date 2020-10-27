@@ -128,56 +128,62 @@ $("#add-btn-6").click(function() {
 
 
 
-//Removal Buttons on Cart Page
+// //Removal Buttons on Cart Page
 
-//Remove Item-1
-$("#rm-btn-1").click(function() {
-    remFromCart(this);
-});
+// //Remove Item-1
+// $("#rm-btn-1").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-2
-$("#rm-btn-2").click(function() {
-    remFromCart(this);
-});
+// //Remove Item-2
+// $("#rm-btn-2").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-3
-$("#rm-btn-3").click(function() {
-    remFromCart(this);
-});
+//  //Remove Item-3
+// $("#rm-btn-3").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-4
-$("#rm-btn-4").click(function() {
-    remFromCart(this);
-});
+//  //Remove Item-4
+// $("#rm-btn-4").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-5
-$("#rm-btn-5").click(function() {
-    remFromCart(this);
-});
+// //Remove Item-5
+// $("#rm-btn-5").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-6
-$("#rm-btn-6").click(function() {
-    remFromCart(this);
-});
+//  //Remove Item-6
+// $("#rm-btn-6").click(function(){
+//     remFromCart(this);
+//  });
 
 
-//Removal Item function
-function remFromCart(remButtonRef) {
-    if (remButtonRef.id == "rm-btn-1") {
-        cart.item1 = "Hello"
-    } else if (remButtonRef.id == "rm-btn-2") {
-        cart.item2 = "Hello"
-    } else if (remButtonRef.id == "rm-btn-3") {
-        cart.item3 = "Hello"
-    } else if (remButtonRef.id == "rm-btn-4") {
-        cart.item4 = "Hello"
-    } else if (remButtonRef.id == "rm-btn-5") {
-        cart.item5 = "Hello"
-    } else if (remButtonRef.id == "rm-btn-6") {
-        cart.item6 = "Hello"
-    } else {}
-    //renderCart();
-}
+// //Removal Item function
+//  function remFromCart(remButtonRef){
+//     if(remButtonRef.id == "rm-btn-1"){
+//         cart.item1 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-2"){
+//         cart.item2 = "Hello"           
+//     }
+//     else if(remButtonRef.id == "rm-btn-3"){
+//         cart.item3 = "Hello" 
+//     }
+//     else if(remButtonRef.id == "rm-btn-4"){
+//         cart.item4 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-5"){
+//         cart.item5 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-6"){
+//         cart.item6 = "Hello"
+//     }  
+//     else{}    
+//     //renderCart();
+//  }
 
 //Addition Item function
 function addtoCart(addButtonRef) {
@@ -210,22 +216,6 @@ function addtoCart(addButtonRef) {
     cartCount(books[i]);
     //renderCart();
 }
-
-//   function renderCart(remButtonRef){
-//     document.getElementById("cart1").value = cart.item1;
-//     document.getElementById("cart2").value = cart.item2;
-//     document.getElementById("cart3").value = cart.item3;
-//     document.getElementById("cart4").value = cart.item4;
-//     document.getElementById("cart5").value = cart.item5;
-//     document.getElementById("cart6").value = cart.item6;
-//   }
-
-//Remove expected shipping delivery date
-//When items are all hidden
-// if($(".hide-item-1").is(":hidden")){
-//     $(".hide-item-6").hide();
-//     $(".hide-hr-6").hide();
-// }
 
 
 //Cart item counting
@@ -290,43 +280,32 @@ function bookSelect(books) {
             bookSelected.isSelected = bookSelected.isSelected + 1;
 
         }
-        bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
-        //books.isSelected = books.isSelected + 1;
-        // bookSelected = {
-        //     ["Title"]: books.title,
-        //     ["Price"]: books.price,
-        //     ["URL"]: books.url,
-        //     ["Quantity"]: books.isSelected
-        //  }
-        //  ["Title"]: books.title,
-        //  ["Price"]: books.price,
-        //  ["URL"]: books.url,
-        //  ["Quantity"]: books.isSelected
-    } else {
+           bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
+    }
+    else
+    {
         books.isSelected = 1;
         bookSelected = {
-                [books.title]: books
-            }
-            // bookSelected = {
-            //     ["Title"]: books.title,
-            //     ["Price"]: books.price,
-            //     ["URL"]: books.url,
-            //     ["Quantity"]: books.isSelected
-            // }
+            [books.title]: books}
     }
     localStorage.setItem('bookSelected', JSON.stringify(bookSelected));
 }
 
 function InitCartPage() {
     let booksInCart = localStorage.getItem("bookSelected");
-
+    let booksTotal = localStorage.getItem("totalBookCost");
     //let book1 = $(".cart-container");
     let book1 = document.querySelector(".cart-container")
     booksInCart = JSON.parse(booksInCart)
-    console.log(book1, booksInCart, booksInCart.url);
+    booksTotal = JSON.parse(booksTotal)
+    //console.log(book1, booksInCart, booksInCart.url);
 
     //book1.append("<div class="test"><span class="title">Hello World</span></div>");
 
+
+    if (booksTotal) {
+        $("#book-Total").text("$" + booksTotal);
+    }
 
 
     if (booksInCart) {
@@ -350,7 +329,7 @@ function InitCartPage() {
                                 <div>
                                     <h5 id="Book1Title">${item.title}</h5>
                                     <p class="mb-3 text-muted text-uppercase small">Front End - Book</p>
-                                    <p class="mb-2 text-muted text-uppercase small">Order By</p>
+                                    <p class="mb-2 text-muted text-uppercase small">Quantity: ${item.isSelected}</p>
                                 </div>
                                 <div>
                                     <div class="def-number-input number-input md-0 w-100">
@@ -370,29 +349,14 @@ function InitCartPage() {
             <a href="#!" type="button" class="btn btn-secondary card-link-secondary small text-uppercase"><i
                       class="fas fa-heart mr-1"></i> Move to wish list </a>
 </div>
-<p class="mb-0"><span><strong id="summary">${item.price}</strong></span></p class="mb-0">
+<p class="mb-0"><span><strong id="summary">$${item.price}.00</strong></span></p class="mb-0">
 </div>
 </div>
 </div>
 </div>  
         `
-        })
-
+        })  
     }
-
-
-    // $("#Book1Title").html(booksInCart.title);
-    //console.log(booksInCart)
-    // Object.values(booksInCart).map(item => {
-    //     book1.innerHtml += `
-    // <div class="test"><span class="title">Hello World</span></div>
-    // `
-    // $(".cart-container").html("Hello <b>world</b>!"
-    // );
-    // $("#Book1Title").html("Hello <b>world</b>!");  
-    // <span>${item.price}</span>  
-    //  }
-    //  )
 
 }
 

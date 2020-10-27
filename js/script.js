@@ -386,10 +386,8 @@ function InitCartPage() {
 </div>
 </div>  
         `
-        book1.innerHTML += `<span>totalBookCost</span> `
-
         })
-
+        book1.innerHTML += `<h3>The total book Cost is:  </h3>`
     }        
 
 

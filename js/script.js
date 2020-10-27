@@ -47,53 +47,11 @@ loadCartTotCount();
 InitCartPage();
 
 
-
-//Item addition for Cart page
-//Add Item-1
-// $("#add-btn-1").click(function(){
-//     // Make it go add to cart when button is clicked
-//     $(".hide-item-1").show();
-//     $(".hide-hr-1").show();
-//  });
-
-// //Remove Item-2
-// $(".add-btn-2").click(function(){
-//     $(".hide-item-2").show();
-//     $(".hide-hr-2").show();
-//  });
-
-//  //Remove Item-3
-// $(".add-btn-3").click(function(){
-//     $(".hide-item-3").show();
-//     $(".hide-hr-3").show();
-//  });
-
-//  //Remove Item-4
-// $(".add-btn-4").click(function(){
-//     $(".hide-item-4").show();
-//     $(".hide-hr-4").show();
-//  });
-
-// //Remove Item-5
-// $(".add-btn-5").click(function(){
-//     $(".hide-item-5").show();
-//     $(".hide-hr-5").show();
-//  });
-
-//  //Remove Item-6
-// $(".add-btn-6").click(function(){
-//     $(".hide-item-6").show();
-//     $(".hide-hr-6").show();
-//  });
-
-
-
 //Addition Buttons on Books
 
 //Add Item-1
 $("#add-btn-1").click(function(){
     addtoCart(this);
-    
  });
 
  //Add Item-2
@@ -123,62 +81,62 @@ $("#add-btn-6").click(function(){
 
 
 
-//Removal Buttons on Cart Page
+// //Removal Buttons on Cart Page
 
-//Remove Item-1
-$("#rm-btn-1").click(function(){
-    remFromCart(this);
- });
+// //Remove Item-1
+// $("#rm-btn-1").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-2
-$("#rm-btn-2").click(function(){
-    remFromCart(this);
- });
+// //Remove Item-2
+// $("#rm-btn-2").click(function(){
+//     remFromCart(this);
+//  });
 
- //Remove Item-3
-$("#rm-btn-3").click(function(){
-    remFromCart(this);
- });
+//  //Remove Item-3
+// $("#rm-btn-3").click(function(){
+//     remFromCart(this);
+//  });
 
- //Remove Item-4
-$("#rm-btn-4").click(function(){
-    remFromCart(this);
- });
+//  //Remove Item-4
+// $("#rm-btn-4").click(function(){
+//     remFromCart(this);
+//  });
 
-//Remove Item-5
-$("#rm-btn-5").click(function(){
-    remFromCart(this);
- });
+// //Remove Item-5
+// $("#rm-btn-5").click(function(){
+//     remFromCart(this);
+//  });
 
- //Remove Item-6
-$("#rm-btn-6").click(function(){
-    remFromCart(this);
- });
+//  //Remove Item-6
+// $("#rm-btn-6").click(function(){
+//     remFromCart(this);
+//  });
 
 
-//Removal Item function
- function remFromCart(remButtonRef){
-    if(remButtonRef.id == "rm-btn-1"){
-        cart.item1 = "Hello"
-    }
-    else if(remButtonRef.id == "rm-btn-2"){
-        cart.item2 = "Hello"           
-    }
-    else if(remButtonRef.id == "rm-btn-3"){
-        cart.item3 = "Hello" 
-    }
-    else if(remButtonRef.id == "rm-btn-4"){
-        cart.item4 = "Hello"
-    }
-    else if(remButtonRef.id == "rm-btn-5"){
-        cart.item5 = "Hello"
-    }
-    else if(remButtonRef.id == "rm-btn-6"){
-        cart.item6 = "Hello"
-    }  
-    else{}    
-    //renderCart();
- }
+// //Removal Item function
+//  function remFromCart(remButtonRef){
+//     if(remButtonRef.id == "rm-btn-1"){
+//         cart.item1 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-2"){
+//         cart.item2 = "Hello"           
+//     }
+//     else if(remButtonRef.id == "rm-btn-3"){
+//         cart.item3 = "Hello" 
+//     }
+//     else if(remButtonRef.id == "rm-btn-4"){
+//         cart.item4 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-5"){
+//         cart.item5 = "Hello"
+//     }
+//     else if(remButtonRef.id == "rm-btn-6"){
+//         cart.item6 = "Hello"
+//     }  
+//     else{}    
+//     //renderCart();
+//  }
 
 //Addition Item function
 function addtoCart(addButtonRef){
@@ -217,22 +175,6 @@ function addtoCart(addButtonRef){
     cartCount(books[i]);
     //renderCart();
  }
-
-//   function renderCart(remButtonRef){
-//     document.getElementById("cart1").value = cart.item1;
-//     document.getElementById("cart2").value = cart.item2;
-//     document.getElementById("cart3").value = cart.item3;
-//     document.getElementById("cart4").value = cart.item4;
-//     document.getElementById("cart5").value = cart.item5;
-//     document.getElementById("cart6").value = cart.item6;
-//   }
-
-//Remove expected shipping delivery date
-//When items are all hidden
-// if($(".hide-item-1").is(":hidden")){
-//     $(".hide-item-6").hide();
-//     $(".hide-hr-6").hide();
-// }
 
 
 //Cart item counting
@@ -300,29 +242,12 @@ function bookSelect(books) {
 
         }
            bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
-             //books.isSelected = books.isSelected + 1;
-            // bookSelected = {
-            //     ["Title"]: books.title,
-            //     ["Price"]: books.price,
-            //     ["URL"]: books.url,
-            //     ["Quantity"]: books.isSelected
-          //  }
-            //  ["Title"]: books.title,
-            //  ["Price"]: books.price,
-            //  ["URL"]: books.url,
-            //  ["Quantity"]: books.isSelected
     }
     else
     {
         books.isSelected = 1;
         bookSelected = {
             [books.title]: books}
-        // bookSelected = {
-        //     ["Title"]: books.title,
-        //     ["Price"]: books.price,
-        //     ["URL"]: books.url,
-        //     ["Quantity"]: books.isSelected
-        // }
     }
     localStorage.setItem('bookSelected', JSON.stringify(bookSelected));
 }
@@ -387,21 +312,38 @@ function InitCartPage() {
 </div>  
         `
         })
-        book1.innerHTML += `<h3>The total book Cost is:  </h3>`
+        book1.innerHTML += `<h3>            <!-- Card -->
+        <div class="mt-5">
+            <div class="pt-4">
+
+                <h5 class="mb-3">The total amount of</h5>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                        Temporary amount
+                        <span>$50.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Shipping
+                        <span>$5.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                        <div>
+                            <strong>The total amount of</strong>
+                            <strong>
+                        <p class="mb-0">(including VAT)</p>
+                      </strong>
+                        </div>
+                        <span><strong>$58.98</strong></span>
+                    </li>
+                </ul>
+
+                <a href="check-out.html" style="text-decoration: none;"><button type="button"  class="btn btn-primary btn-block">go to checkout</button></a>
+
+
+            </div>
+        </div>
+        <!-- Card -->`
     }        
-
-
-    // $("#Book1Title").html(booksInCart.title);
-    //console.log(booksInCart)
-    // Object.values(booksInCart).map(item => {
-    //     book1.innerHtml += `
-    // <div class="test"><span class="title">Hello World</span></div>
-    // `
-    // $(".cart-container").html("Hello <b>world</b>!"
-    // );
-    // $("#Book1Title").html("Hello <b>world</b>!");  
-    // <span>${item.price}</span>  
-  //  }
-  //  )
 
 }

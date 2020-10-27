@@ -15,7 +15,7 @@ var books = [{
         isSelected: 0
     },
     {
-        url: 'images/SQL_Programming_For_Beginners.png',
+        url: 'images/SQL_Programming_For_Beginners.jpg',
         title: 'SQL Programming For Beginners',
         price: 25,
         isSelected: 0
@@ -33,7 +33,7 @@ var books = [{
         isSelected: 0
     },
     {
-        url: 'images/Essentials_of_Web_Database_Development.png',
+        url: 'images/Essentials_of_Web_Database_Development.jpg',
         title: 'Essential of Web Database Development',
         price: 25,
         isSelected: 0
@@ -95,7 +95,7 @@ InitCartPage();
 
 //Addition Buttons on Books
 
-//Add Item-1
+/* //Add Item-1
 $("#add-btn-1").click(function() {
     addtoCart(this);
 
@@ -125,7 +125,7 @@ $("#add-btn-5").click(function() {
 $("#add-btn-6").click(function() {
     addtoCart(this);
 });
-
+ */
 
 
 // //Removal Buttons on Cart Page
@@ -280,13 +280,12 @@ function bookSelect(books) {
             bookSelected.isSelected = bookSelected.isSelected + 1;
 
         }
-           bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
-    }
-    else
-    {
+        bookSelected[books.title].isSelected = bookSelected[books.title].isSelected + 1;
+    } else {
         books.isSelected = 1;
         bookSelected = {
-            [books.title]: books}
+            [books.title]: books
+        }
     }
     localStorage.setItem('bookSelected', JSON.stringify(bookSelected));
 }
@@ -298,7 +297,7 @@ function InitCartPage() {
     let book1 = document.querySelector(".cart-container")
     booksInCart = JSON.parse(booksInCart)
     booksTotal = JSON.parse(booksTotal)
-    //console.log(book1, booksInCart, booksInCart.url);
+        //console.log(book1, booksInCart, booksInCart.url);
 
     //book1.append("<div class="test"><span class="title">Hello World</span></div>");
 
@@ -329,18 +328,8 @@ function InitCartPage() {
                             <div class="d-flex justify-content-between">
                                 <div>
                                     <h5 id="Book1Title">${item.title}</h5>
-                                    <p class="mb-3 text-muted text-uppercase small">Front End - Book</p>
+                                    <p class="mb-3 text-muted text-uppercase small">Software - Book</p>
                                     <p class="mb-2 text-muted text-uppercase small">Quantity: ${item.isSelected}</p>
-                                </div>
-                                <div>
-                                    <div class="def-number-input number-input md-0 w-100">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus decrease"></button>
-                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus increase"></button>
-                                    </div>
-                                    <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                    (Note, 1 Book)
-                  </small>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
@@ -356,7 +345,7 @@ function InitCartPage() {
 </div>
 </div>  
         `
-        })  
+        })
     }
 
 }

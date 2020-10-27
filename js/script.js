@@ -305,6 +305,7 @@ function InitCartPage() {
 
     if (booksTotal) {
         $("#book-Total").text("$" + booksTotal);
+        $("#book-Total1").text("$" + booksTotal);
     }
 
 

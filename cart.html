@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WALKABOOKS</title>
+
+    <!--Customized CSS Styling-->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">WALKABOOKS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">
+                            <i class="fa fa-user-circle" style="font-size: 32px"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa fa-shopping-cart" style="font-size: 32px"></i
+                  ><span id="cart-icon-count">0</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <!-- Page Content -->
+
+    <div class="container">
+        <br>
+            <h3>Cart</h3>
+            <!--Grid row-->
+            <div class="row py-10 justify-content-center">
+
+                <!--Grid column-->
+                <div class="cart col-lg-8 sm-12">
+
+                <div class="cart-container">
+
+                </div>         
+
+            </div>
+        </div>
+
+        <!--Grid column-->
+        <div class="text-center">
+
+        <!-- Card -->
+        <div class="mb-3">
+            <div class="pt-4">
+
+                <h5 class="mb-4">We accept</h5>
+
+                <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" alt="Visa">
+                <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" alt="American Express">
+                <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" alt="Mastercard">
+                <img class="mr-2" width="45px" src="https://mdbootstrap.com/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png" alt="PayPal acceptance mark">
+            </div>
+        </div>
+
+
+            <!-- Card -->
+            <div class="mt-5 ml-auto mr-auto" style= "width: 40%;">
+                <div class="pt-4">
+
+                    <h5 class="mb-3">The total amount of</h5>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                            Sub-Total
+                            <span id="book-Total1">$0.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Shipping
+                            <span>$0.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                            <div>
+                                <strong>The total amount of</strong>
+                                <strong>
+                            <p class="mb-0">(including VAT)</p>
+                          </strong>
+                            </div>
+                            <span id="book-Total"><strong>$0.00</strong></span>
+                        </li>
+                    </ul>
+
+                    <a href="check-out.html" style="text-decoration: none;"><button type="button"  class="btn btn-primary btn-block">go to checkout</button></a>
+
+
+                </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="mb-3">
+                <div class="pt-4">
+
+                    <a class="dark-grey-text d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Add a discount code (optional)
+                      <span><i class="fa fa-chevron-circle-down	pt-1"></i></span>
+                        </a>
+
+                        <div class="collapse" id="collapseExample">
+                            <div class="mt-3">
+                                <div class="md-form md-outline mb-0">
+                                    <input type="text" id="discount-code" class="form-control font-weight-light" placeholder="Enter discount code">
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- Card -->
+
+        </div>
+        <!--Grid column-->
+        </div>
+
+        </div>
+        <!-- Page Content -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+
+                <div class="about-footer">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Stores Near to Me</a></li>
+                    </ul>
+                </div>
+                <!--End of the First Footer Column-->
+
+                <div class="cart-footer">
+                    <h5>Customer Care</h5>
+                    <ul>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Ordering</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <!--End of the Second Footer Column-->
+
+                <div class="social-footer">
+                    <h5>Follow us</h5>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter-square" style="font-size:30px"></i></a></li>
+                    </ul>
+
+                </div>
+                <!--End of the Third Footer Column-->
+
+                <div class="contact-us-footer">
+                    <ul class="contact">
+                        <h5>Contact Us</h5>
+                        <li><a href="#"><i class="fa fa-envelope" style="font-size:30px"></i></a></li>
+                        <li><a href="#"><i class="fa fa-phone" style="font-size:30px"></i></a></li>
+                        <li><a href="#"><i class="fa fa-map-marker" style="font-size:30px"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="map">
+                    <h6>1111, Seymor Street, Vancouver, BC</h6>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10410.510865752853!2d-123.1152548!3d49.2834511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb4e03bf432e66714!2sBCIT%20Downtown%20Campus!5e0!3m2!1sen!2sca!4v1602882765225!5m2!1sen!2sca" width="230"
+                        height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+            </div>
+            <!-- End of Container Footer -->
+
+            <!-- Copyright-->
+            <div class="copyright">
+                <p class="m-0 text-center text-white">Copyright &copy; <a href="index.html">WalkaBooks 2020</a> <br/>
+                    <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy </a> | <a href="#"> Site Map </a> |<a href="credits.html">Photo Credits</a></p>
+            </div>
+            <!-- End of Copyright -->
+        </footer>
+        <!-- End of Footer -->
+
+        <script src="js/script.js" async defer></script>
+        <!--jQuery, Popper.js, and Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

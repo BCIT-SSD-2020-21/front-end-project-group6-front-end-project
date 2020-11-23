@@ -1,0 +1,71 @@
+footer {
+    background-color: $dark-color;
+    color: $lightest-color;
+    padding-bottom: $padding1/2;
+    padding-top: $padding1/2;
+
+    .about-footer ul, .cart-footer ul, h5, .social-footer ul, .contact-us-footer ul{
+        text-align: center;
+    }
+    
+    .about-footer li, .cart-footer li, .contact li, .social-footer li{
+     display: inline;
+    }
+
+
+    a{
+        text-decoration: none;
+        color:$lightest-color;
+        padding: $padding;
+    }
+
+    .map{
+        text-align: center;   
+    }
+
+    .copyright{
+        margin-top: 10px;
+    }
+   
+}
+
+
+@media screen and (min-width:$phoneLandscape){
+    footer{
+        .container {
+            display: grid;
+            grid-template-columns: 20% 20% 30% 30%;
+            grid-template-rows: 50% 50%;
+        }
+        
+        .about-footer li, .cart-footer li{
+        display: block;
+    }
+    .cart-footer{
+       
+        padding-left: 20%;
+    }
+    
+    .social-footer{
+        
+       
+        padding-left: 30%;
+    }
+    .contact-us-footer{
+        padding-left: 20%;
+    }
+    
+    .map {
+        grid-row: 2/2;
+        grid-column: 1/5;
+        text-align: end;
+      }
+
+    }
+}
+
+
+
+
+
+

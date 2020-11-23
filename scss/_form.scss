@@ -1,0 +1,60 @@
+//contact us form
+form {
+    border: 1px;
+    padding: $padding1;
+    margin-bottom: $padding1;
+    margin-top: $padding1;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: $light-color;
+}
+
+.form-button, h3 {
+    text-align: center;
+}
+
+
+.login-form {
+    display: grid;
+    align-items: center;
+}
+
+//checkout page 
+
+
+
+.check1,
+.check2,
+.check3,
+.check4 {
+    padding: 30px;
+}
+
+.Billing_header {
+    border-bottom: 1px solid black;
+    align-self: center;
+}
+
+
+.pay_now {
+    border-top: 1px solid black;
+}
+
+@media screen and (min-width:$tabletLandscape) {
+
+    .checkout-form {
+        display: grid;
+        grid-template-rows: 5% 35% 40% 20%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+    .form1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 10px;
+    }
+    .form2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
